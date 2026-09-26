@@ -76,7 +76,7 @@ I'm a passionate developer and **Red Hat Intern** with strong foundations in **J
     <img src="https://skillicons.dev/icons?i=gmail" width="45"/>
   </a>
   &nbsp;
-  <a href="https://linkedin.com/in/atul-kumar-454b34380" target="_blank">
+  <a href="https://www.linkedin.com/in/atul-kumar-454b34380/" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" width="45"/>
   </a>
   &nbsp;
