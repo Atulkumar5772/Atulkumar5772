@@ -38,15 +38,19 @@ I am passionate about systems engineering, Linux environments (RHEL), and cloud 
 <div align="center">
 
 <table>
-
 <tr>
-
-<td width="100%" valign="top">
+<td width="100%" align="center">
 
 <h3 align="center">🖼️ Image Search App</h3>
 
 <p align="center">
-A fast, asynchronous image discovery web application built with pure Vanilla JavaScript and Unsplash REST API. Features real-time search queries, high-definition modal lightbox preview, and one-click direct image downloading.
+  <a href="https://atulkumar5772.github.io/Image-Search-App/" target="_blank">
+    <img src="https://raw.githubusercontent.com/Atulkumar5772/Image-Search-App/main/assets/preview.png" width="100%" alt="Image Search App Preview" />
+  </a>
+</p>
+
+<p align="center">
+A fast and responsive image discovery web application built with pure Vanilla JavaScript and Unsplash REST API. Features real-time search queries, HD modal lightbox preview, and one-click direct image downloading.
 </p>
 
 <p align="center">
@@ -60,16 +64,14 @@ A fast, asynchronous image discovery web application built with pure Vanilla Jav
   <a href="https://atulkumar5772.github.io/Image-Search-App/" target="_blank">
     <img src="https://img.shields.io/badge/🌐 Live Demo-2563EB?style=for-the-badge">
   </a>
-  &nbsp;
+  &nbsp;&nbsp;
   <a href="https://github.com/Atulkumar5772/Image-Search-App" target="_blank">
     <img src="https://img.shields.io/badge/📂 Repository-181717?style=for-the-badge&logo=github">
   </a>
 </p>
 
 </td>
-
 </tr>
-
 </table>
 
 </div>
