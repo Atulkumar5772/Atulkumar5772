@@ -33,6 +33,49 @@ I am passionate about systems engineering, Linux environments (RHEL), and cloud 
 
 ---
 
+# 🚀 Featured Projects
+
+<div align="center">
+
+<table>
+
+<tr>
+
+<td width="100%" valign="top">
+
+<h3 align="center">🖼️ Image Search App</h3>
+
+<p align="center">
+A fast, asynchronous image discovery web application built with pure Vanilla JavaScript and Unsplash REST API. Features real-time search queries, high-definition modal lightbox preview, and one-click direct image downloading.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/Unsplash%20API-000000?style=flat-square&logo=unsplash&logoColor=white">
+</p>
+
+<p align="center">
+  <a href="https://atulkumar5772.github.io/Image-Search-App/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐 Live Demo-2563EB?style=for-the-badge">
+  </a>
+  &nbsp;
+  <a href="https://github.com/Atulkumar5772/Image-Search-App" target="_blank">
+    <img src="https://img.shields.io/badge/📂 Repository-181717?style=for-the-badge&logo=github">
+  </a>
+</p>
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+---
+
 # 💻 Tech Stack & Tools
 
 <div align="center">
