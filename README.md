@@ -1,75 +1,96 @@
 <div align="center">
 
-# Hi 👋, I'm Atul Kumar
-
-### Computer Science Student @ PIET • Red Hat Intern • Salesforce Developer
+<!-- 🌟 HEADER ANIMATED BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,8,24&height=220&section=header&text=Atul%20Kumar&fontSize=50&fontColor=ffffff&animation=twinkling&desc=Red%20Hat%20Intern%20%7C%20Salesforce%20Developer%20%7C%20CSE%20@%20PIET&descSize=19&descAlignY=70&descAlign=50" width="100%"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&duration=3500&pause=1200&color=3BA4F2&center=true&vCenter=true&width=650&lines=Red+Hat+Enterprise+Linux+Enthusiast;Salesforce+Developer;Passionate+About+Java+%26+C%2B%2B;Problem+Solver+on+LeetCode" alt="Typing SVG"/>
+  <a href="https://linkedin.com/in/atul-kumar-454b34380/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://leetcode.com/u/atulkumar181005/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:atulchoudhary181005@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+</p>
+
+<!-- ⚡ NEON TYPING SVG -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=23&duration=2800&pause=800&color=00F5FF&center=true&vCenter=true&width=620&lines=%E2%9A%A1+Red+Hat+Enterprise+Linux+Specialist;%E2%98%81%EF%B8%8F+Salesforce+Cloud+Developer;%F0%9F%9A%80+Mastering+DSA+in+Java+%26+C%2B%2B;%F0%9F%92%BB+Full-Stack+Web+App+Architect" alt="Typing Banner"/>
 </p>
 
 </div>
 
 ---
 
-## 💫 About Me
-
-I'm a **Computer Science & Engineering student at Poornima Institute of Engineering & Technology (PIET), Jaipur** (2024–2028) and a **Red Hat Intern**.
-
-I am passionate about systems engineering, Linux environments (RHEL), and cloud platforms like Salesforce. I love understanding how software works under the hood — from low-level C/C++ memory management to enterprise database design with MySQL and object-oriented architectures in Java.
-
-- 🏢 **Experience:** Red Hat Intern — hands-on with RHEL, Linux administration, CLI workflows, and system troubleshooting.
-- ⚡ **Core Skills:** Java, C/C++, Linux/RHEL, MySQL, HTML & CSS, and Salesforce Development.
-- 🎯 **Focus:** Building robust applications, mastering system administration, and solving DSA problems daily.
-
----
-
-## 🚀 What I'm Exploring & Building
-
-* 🐧 **Linux & Systems:** Red Hat Enterprise Linux (RHEL), Bash scripting & System Configuration
-* ☁️ **Enterprise Ecosystems:** Salesforce Development & Cloud Administration
-* ☕ **Object-Oriented Programming:** Core Java, C++, and Data Structures
-* 🗄️ **Database Systems:** Relational design and optimization using MySQL
-
----
-
-# 🚀 Featured Projects
+## 🛠️ Tech Arsenal & Stack
 
 <div align="center">
 
-<table>
+<table border="0">
+  <tr>
+    <td align="center" width="25%">
+      <b>☕ Core Languages</b><br><br>
+      <img src="https://skillicons.dev/icons?i=java,cpp,c,python,js&perline=3" />
+    </td>
+    <td align="center" width="25%">
+      <b>🐧 Linux & Cloud</b><br><br>
+      <img src="https://skillicons.dev/icons?i=redhat,linux,bash,salesforce&perline=2" />
+    </td>
+    <td align="center" width="25%">
+      <b>🌐 Web & Database</b><br><br>
+      <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,mysql&perline=3" />
+    </td>
+    <td align="center" width="25%">
+      <b>⚙️ Dev Tools</b><br><br>
+      <img src="https://skillicons.dev/icons?i=git,github,vscode,vim,postman&perline=3" />
+    </td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+## 🚀 Featured Project Showcase
+
+<div align="center">
+
+<table width="100%">
 <tr>
-<td width="100%" align="center">
+<td width="55%" align="left">
 
-<h3 align="center">🖼️ Image Search App</h3>
+### 🖼️ Image Search App
+<p>
+  <img src="https://img.shields.io/badge/Vanilla_JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Unsplash_API-000000?style=flat-square&logo=unsplash&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+</p>
 
-<p align="center">
+<p>
+  ⚡ <b>Instant REST API Search</b> • 📱 <b>HD Lightbox Modal</b> • ⬇️ <b>One-Click Download</b>
+</p>
+
+<br>
+
+<p align="left">
   <a href="https://atulkumar5772.github.io/Image-Search-App/" target="_blank">
-    <img src="https://raw.githubusercontent.com/Atulkumar5772/Image-Search-App/main/assets/preview.png" width="100%" alt="Image Search App Preview" />
-  </a>
-</p>
-
-<p align="center">
-A fast and responsive image discovery web application built with pure Vanilla JavaScript and Unsplash REST API. Features real-time search queries, HD modal lightbox preview, and one-click direct image downloading.
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
-  <img src="https://img.shields.io/badge/Unsplash%20API-000000?style=flat-square&logo=unsplash&logoColor=white">
-</p>
-
-<p align="center">
-  <a href="https://atulkumar5772.github.io/Image-Search-App/" target="_blank">
-    <img src="https://img.shields.io/badge/🌐 Live Demo-2563EB?style=for-the-badge">
+    <img src="https://img.shields.io/badge/🌐_LIVE_DEMO-2563EB?style=for-the-badge&logo=google-chrome&logoColor=white"/>
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/Atulkumar5772/Image-Search-App" target="_blank">
-    <img src="https://img.shields.io/badge/📂 Repository-181717?style=for-the-badge&logo=github">
+    <img src="https://img.shields.io/badge/📂_GITHUB_REPO-7C3AED?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
 </p>
 
+</td>
+<td width="45%" align="center">
+  <a href="https://atulkumar5772.github.io/Image-Search-App/" target="_blank">
+    <img src="https://raw.githubusercontent.com/Atulkumar5772/Image-Search-App/main/assets/preview.png" width="100%" alt="Image Search App Preview" style="border-radius: 12px;"/>
+  </a>
 </td>
 </tr>
 </table>
@@ -78,127 +99,36 @@ A fast and responsive image discovery web application built with pure Vanilla Ja
 
 ---
 
-# 💻 Tech Stack & Tools
+## 📊 Live Metrics & DSA Activity
 
 <div align="center">
 
-### Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=java" />
-<img src="https://skillicons.dev/icons?i=c" />
-<img src="https://skillicons.dev/icons?i=cpp" />
-<img src="https://skillicons.dev/icons?i=js" />
-<img src="https://skillicons.dev/icons?i=python" />
-</p>
-
-### Systems & Cloud
-
-<p>
-<img src="https://skillicons.dev/icons?i=redhat" />
-<img src="https://skillicons.dev/icons?i=linux" />
-<img src="https://skillicons.dev/icons?i=bash" />
-</p>
-
-### Web Development
-
-<p>
-<img src="https://skillicons.dev/icons?i=html" />
-<img src="https://skillicons.dev/icons?i=css" />
-<img src="https://skillicons.dev/icons?i=bootstrap" />
-</p>
-
-### Database & Storage
-
-<p>
-<img src="https://skillicons.dev/icons?i=mysql" />
-</p>
-
-### Developer Tools
-
-<p>
-<img src="https://skillicons.dev/icons?i=git" />
-<img src="https://skillicons.dev/icons?i=github" />
-<img src="https://skillicons.dev/icons?i=vscode" />
-</p>
-
-</div>
-
----
-
-# 📊 GitHub Statistics
-
-<p align="center">
-
-<img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api?username=Atulkumar5772&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<img width="49%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Atulkumar5772&layout=compact&theme=tokyonight&hide_border=true"/>
-
-</p>
-
-<br>
-
-<div align="center">
-
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Atulkumar5772&theme=tokyo-night&hide_border=true"/>
-
-</div>
-
----
-
-# 📈 Contribution Overview
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Atulkumar5772&theme=tokyonight"/>
-
-</div>
-
----
-
-# 🌐 Connect With Me
-
-<div align="center">
-
-<p>
-Feel free to reach out for tech discussions, collaborations, or networking!
-</p>
-
-<br>
-
-<a href="mailto:atulchoudhary181005@gmail.com">
-<img src="https://skillicons.dev/icons?i=gmail" width="50"/>
-</a>
-
-<a href="https://www.linkedin.com/in/atul-kumar-454b34380/" target="_blank">
-<img src="https://skillicons.dev/icons?i=linkedin" width="50"/>
-</a>
-
+<!-- LeetCode Live Card -->
 <a href="https://leetcode.com/u/atulkumar181005/" target="_blank">
-<img src="https://cdn.simpleicons.org/leetcode/FFA116" width="50"/>
+  <img src="https://leetcard.jacoblin.cool/atulkumar181005?theme=radical&font=fira-code&border=0&radius=12" height="190" alt="LeetCode Card"/>
 </a>
 
+<br><br>
+
+<!-- GitHub Stats & Top Languages -->
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Atulkumar5772&show_icons=true&theme=radical&hide_border=true&border_radius=12" height="175" />
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Atulkumar5772&layout=compact&theme=radical&hide_border=true&border_radius=12" height="175" />
+
+<br><br>
+
+<!-- GitHub Streak -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Atulkumar5772&theme=radical&hide_border=true&border_radius=12" height="175" />
+
 </div>
 
 ---
 
 <div align="center">
 
-## 💭 Philosophy
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,8,24&height=100&section=footer" width="100%"/>
 
-> *"Talk is cheap. Show me the code."* — Linus Torvalds  
-> *"Code with precision, architect with passion, and build with purpose."*
-
-</div>
-
----
-
-<div align="center">
-
-### ⭐ Thanks for visiting my profile!
-
-Feel free to check out my repositories and drop a star if you find something usefull.
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0f172a,100:2563eb&section=footer"/>
+<p>
+  <b>🌟 Thanks for visiting! Feel free to explore my repositories. 🌟</b>
+</p>
 
 </div>
