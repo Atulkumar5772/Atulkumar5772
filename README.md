@@ -37,22 +37,25 @@
       <img src="https://skillicons.dev/icons?i=java,cpp,c,python,js&perline=3" />
     </td>
     <td align="center" width="25%">
-      <b>🐧 Linux & Cloud</b><br><br>
+      <b>🐧 Linux & Systems</b><br><br>
       <img src="https://skillicons.dev/icons?i=redhat,linux,bash,salesforce&perline=2" />
+      <br><br>
+      <img src="https://img.shields.io/badge/VMware-607078?style=flat-square&logo=vmware&logoColor=white" />
     </td>
     <td align="center" width="25%">
       <b>🌐 Web & Database</b><br><br>
       <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,mysql&perline=3" />
     </td>
     <td align="center" width="25%">
-      <b>⚙️ Dev Tools</b><br><br>
-     <img src="https://skillicons.dev/icons?i=git,github,vscode,vim,idea&perline=3" />
+      <b>⚙️ IDEs & Tools</b><br><br>
+      <img src="https://skillicons.dev/icons?i=vscode,idea,androidstudio,git,github&perline=3" />
+      <br><br>
+      <img src="https://img.shields.io/badge/Dev--C%2B%2B-4B8BBE?style=flat-square&logo=c%2B%2B&logoColor=white" />
     </td>
   </tr>
 </table>
 
 </div>
-
 ---
 
 ## 🚀 Featured Project Showcase
