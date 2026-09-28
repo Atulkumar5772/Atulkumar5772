@@ -37,10 +37,12 @@
       <img src="https://skillicons.dev/icons?i=java,cpp,c,python,js&perline=3" />
     </td>
     <td align="center" width="25%">
-      <b>🐧 Linux & Systems</b><br><br>
-      <img src="https://skillicons.dev/icons?i=redhat,linux,bash,salesforce&perline=2" />
+      <b>🐧 Linux & Cloud</b><br><br>
+      <img src="https://skillicons.dev/icons?i=redhat,linux,bash&perline=3" />
       <br><br>
-      <img src="https://img.shields.io/badge/VMware-607078?style=flat-square&logo=vmware&logoColor=white" />
+      <a title="Salesforce"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" width="44" height="44" alt="Salesforce" /></a>
+      &nbsp;&nbsp;
+      <a title="VMware"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Vmware.svg" width="44" height="44" alt="VMware" /></a>
     </td>
     <td align="center" width="25%">
       <b>🌐 Web & Database</b><br><br>
@@ -50,7 +52,7 @@
       <b>⚙️ IDEs & Tools</b><br><br>
       <img src="https://skillicons.dev/icons?i=vscode,idea,androidstudio,git,github&perline=3" />
       <br><br>
-      <img src="https://img.shields.io/badge/Dev--C%2B%2B-4B8BBE?style=flat-square&logo=c%2B%2B&logoColor=white" />
+      <a title="Dev-C++"><img src="https://img.shields.io/badge/DEV_C%2B%2B-004482?style=for-the-badge&logo=c%2B%2B&logoColor=white" height="28" /></a>
     </td>
   </tr>
 </table>
