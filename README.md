@@ -197,7 +197,7 @@ Feel free to reach out for tech discussions, collaborations, or networking!
 
 ### ⭐ Thanks for visiting my profile!
 
-Feel free to check out my repositories and drop a star if you find something useful.
+Feel free to check out my repositories and drop a star if you find something usefull.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0f172a,100:2563eb&section=footer"/>
 
