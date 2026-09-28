@@ -50,9 +50,9 @@
     </td>
     <td align="center" width="25%">
       <b>⚙️ IDEs & Tools</b><br><br>
-      <img src="https://skillicons.dev/icons?i=vscode,idea,androidstudio,git,github&perline=3" />
-      <br><br>
-      <a title="Dev-C++"><img src="https://www.freeiconspng.com/uploads/dev-c--logo-icon-32.png" width="40" height="40" alt="Dev-C++" style="border-radius: 6px;" /></a>
+       <img src="https://skillicons.dev/icons?i=vscode,idea,androidstudio&perline=3" />
+      <br>
+      <a title="Dev-C++"><img src="https://www.freeiconspng.com/uploads/dev-c--logo-icon-32.png" width="48" height="48" alt="Dev-C++" style="border-radius: 10px; vertical-align: middle; margin-right: 4px;" /></a><img src="https://skillicons.dev/icons?i=git,github" style="vertical-align: middle;" />
     </td>
   </tr>
 </table>
