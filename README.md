@@ -34,25 +34,25 @@
   <tr>
     <td align="center" width="25%">
       <b>☕ Core Languages</b><br><br>
-      <img src="https://skillicons.dev/icons?i=java,cpp,c,python,js&perline=3" />
+      <img src="https://skillicons.dev/icons?i=java,cpp,c,js&perline=2" />
     </td>
     <td align="center" width="25%">
       <b>🐧 Linux & Cloud</b><br><br>
       <img src="https://skillicons.dev/icons?i=redhat,linux,bash&perline=3" />
       <br><br>
-      <a title="Salesforce"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" width="44" height="44" alt="Salesforce" /></a>
+      <a title="Salesforce"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" width="42" height="42" alt="Salesforce" /></a>
       &nbsp;&nbsp;
-      <a title="VMware"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Vmware.svg" width="44" height="44" alt="VMware" /></a>
+      <a title="VMware"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Vmware.svg" width="42" height="42" alt="VMware" /></a>
     </td>
     <td align="center" width="25%">
       <b>🌐 Web & Database</b><br><br>
-      <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,mysql&perline=3" />
+      <img src="https://skillicons.dev/icons?i=html,css,bootstrap,mysql&perline=2" />
     </td>
     <td align="center" width="25%">
       <b>⚙️ IDEs & Tools</b><br><br>
       <img src="https://skillicons.dev/icons?i=vscode,idea,androidstudio,git,github&perline=3" />
       <br><br>
-      <a title="Dev-C++"><img src="https://img.shields.io/badge/DEV_C%2B%2B-004482?style=for-the-badge&logo=c%2B%2B&logoColor=white" height="28" /></a>
+      <a title="Dev-C++"><img src="https://www.freeiconspng.com/uploads/dev-c--logo-icon-32.png" width="40" height="40" alt="Dev-C++" style="border-radius: 6px;" /></a>
     </td>
   </tr>
 </table>
