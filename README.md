@@ -46,7 +46,7 @@
     </td>
     <td align="center" width="25%">
       <b>⚙️ Dev Tools</b><br><br>
-      <img src="https://skillicons.dev/icons?i=git,github,vscode,vim,postman&perline=3" />
+     <img src="https://skillicons.dev/icons?i=git,github,vscode,vim,idea&perline=3" />
     </td>
   </tr>
 </table>
