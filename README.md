@@ -64,11 +64,54 @@
 
 <div align="center">
 
+<!-- PROJECT 1: SENTINEL-GUARD -->
+<table width="100%">
+<tr>
+<td width="55%" align="left">
+
+### 🛡️ Sentinel-Guard
+> **Linux Kernel File Integrity & Anti-Tamper Daemon**
+
+<p>
+  <img src="https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&logo=c%2B%2B&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux_Kernel-FCC624?style=flat-square&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Red_Hat_RHEL-EE0000?style=flat-square&logo=redhat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SHA--256_Vault-38BDF8?style=flat-square"/>
+</p>
+
+<p>
+  ⚡ <b>Zero-Polling Kernel inotify</b> • 🔐 <b>Instant Tamper Detection</b> • 🛡️ <b>Auto Vault Baseline</b>
+</p>
+
+<br>
+
+<p align="left">
+  <a href="https://github.com/Atulkumar5772/Sentinel-Guard" target="_blank">
+    <img src="https://img.shields.io/badge/📂_GITHUB_REPO-EE0000?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Atulkumar5772/Sentinel-Guard#readme" target="_blank">
+    <img src="https://img.shields.io/badge/📖_SYSTEM_SPECS-0A66C2?style=for-the-badge&logo=readme&logoColor=white"/>
+  </a>
+</p>
+
+</td>
+<td width="45%" align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=1,6,24&height=140&text=Sentinel-Guard&fontSize=26&fontColor=ffffff&desc=Kernel%20inotify%20%7C%20C%2B%2B17%20Daemon&descSize=14&descAlignY=70&descAlign=50" width="100%" style="border-radius: 12px;"/>
+</td>
+</tr>
+</table>
+
+<br>
+
+<!-- PROJECT 2: IMAGE SEARCH APP -->
 <table width="100%">
 <tr>
 <td width="55%" align="left">
 
 ### 🖼️ Image Search App
+> **High-Performance Image Engine with Unsplash REST API**
+
 <p>
   <img src="https://img.shields.io/badge/Vanilla_JS-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
   <img src="https://img.shields.io/badge/Unsplash_API-000000?style=flat-square&logo=unsplash&logoColor=white"/>
@@ -101,8 +144,6 @@
 </table>
 
 </div>
-
----
 
 ## 📊 Live Metrics & DSA Activity
 
