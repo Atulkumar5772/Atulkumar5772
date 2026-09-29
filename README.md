@@ -162,8 +162,8 @@
 
 <br><br>
 
-<!-- GitHub Streak -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Atulkumar5772&theme=radical&hide_border=true&border_radius=12" height="175" />
+<!-- GitHub Streak (Instant IST Sync) -->
+<img src="https://streak-stats.demolab.com/?user=Atulkumar5772&theme=radical&hide_border=true&border_radius=12&timezone=Asia%2FCalcutta" height="175" />
 
 </div>
 
