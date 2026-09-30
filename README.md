@@ -144,7 +144,20 @@
 </table>
 
 </div>
-&theme=radical&hide_border=true&border_radius=12" height="175" />
+
+## 📊 Live Metrics & DSA Activity
+
+<div align="center">
+
+<!-- LeetCode Live Card -->
+<a href="https://leetcode.com/u/atulkumar181005/" target="_blank">
+  <img src="https://leetcard.jacoblin.cool/atulkumar181005?theme=radical&font=fira-code&border=0&radius=12" height="190" alt="LeetCode Card"/>
+</a>
+
+<br><br>
+
+<!-- GitHub Stats & Top Languages -->
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Atulkumar5772&show_icons=true&theme=radical&hide_border=true&border_radius=12" height="175" />
 <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Atulkumar5772&layout=compact&theme=radical&hide_border=true&border_radius=12" height="175" />
 
 <br><br>
