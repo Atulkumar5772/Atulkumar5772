@@ -1,13 +1,7 @@
 <div align="center">
 
-<!-- 🌟 DYNAMIC ADAPTIVE HERO BANNER (DARK/LIGHT MODE) -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./light.svg">
-  <img src="./dark.svg" alt="Atul Kumar - Red Hat Intern and Systems Developer Profile Banner" width="100%">
-</picture>
-
-<br>
+<!-- 🌟 HEADER ANIMATED BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,8,24&height=220&section=header&text=Atul%20Kumar&fontSize=50&fontColor=ffffff&animation=twinkling&desc=Red%20Hat%20Intern%20%7C%20Salesforce%20Developer%20%7C%20CSE%20@%20PIET&descSize=19&descAlignY=70&descAlign=50" width="100%"/>
 
 <p align="center">
   <a href="https://linkedin.com/in/atul-kumar-454b34380/" target="_blank">
@@ -21,6 +15,11 @@
   <a href="mailto:atulchoudhary181005@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
+</p>
+
+<!-- ⚡ NEON TYPING SVG -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=23&duration=2800&pause=800&color=00F5FF&center=true&vCenter=true&width=620&lines=%E2%9A%A1+Red+Hat+Enterprise+Linux+Specialist;%E2%98%81%EF%B8%8F+Salesforce+Cloud+Developer;%F0%9F%9A%80+Mastering+DSA+in+Java+%26+C%2B%2B;%F0%9F%92%BB+Full-Stack+Web+App+Architect" alt="Typing Banner"/>
 </p>
 
 </div>
@@ -170,19 +169,6 @@
 <img src="https://streak-stats.demolab.com/?user=Atulkumar5772&theme=radical&hide_border=true&border_radius=12&timezone=Asia%2FCalcutta" height="175" />
 
 </div>
-
----
-
-<!-- 🐍 GITHUB CONTRIBUTION SNAKE ANIMATION -->
-<h2 align="center">📊 GitHub Contribution Graph &amp; Activity</h2>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Atulkumar5772/github-snake/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Atulkumar5772/github-snake/output/github-snake.svg" />
-    <img src="https://raw.githubusercontent.com/Atulkumar5772/github-snake/output/github-snake.svg" alt="GitHub Contribution Snake" width="100%" />
-  </picture>
-</p>
 
 ---
 
