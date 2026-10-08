@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610" role="img" aria-label="Atul Kumar - Red Hat Intern and Systems Developer Profile Banner (Light Mode)">
+  <defs>
+    <!-- Light Background Gradients -->
+    <linearGradient id="lightBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF6FF" />
+    </linearGradient>
+
+    <linearGradient id="lightPanelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#F1F5F9" stop-opacity="0.75" />
+    </linearGradient>
+
+    <linearGradient id="lightBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Subtle Light Grid -->
+    <pattern id="lightGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2563EB" stroke-opacity="0.04" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .text-title { font-size: 32px; font-weight: 800; fill: #0F172A; letter-spacing: -0.5px; }
+    .text-headline { font-size: 14px; font-weight: 600; fill: #2563EB; letter-spacing: 0.5px; }
+    .text-muted { font-size: 13px; font-weight: 500; fill: #64748B; }
+    .text-blue { font-size: 13px; font-weight: 600; fill: #2563EB; }
+    .text-emerald { font-size: 13px; font-weight: 600; fill: #059669; }
+    .text-dark { font-size: 13px; font-weight: 600; fill: #1E293B; }
+    .ascii-text { font-size: 9.5px; fill: #0284C7; line-height: 11px; }
+    .pill-text { font-size: 11px; font-weight: 600; fill: #1E293B; }
+  </style>
+
+  <!-- Canvas Outer Background -->
+  <rect width="1180" height="610" rx="24" fill="url(#lightBgGrad)" />
+  <rect width="1180" height="610" rx="24" fill="url(#lightGrid)" />
+  <rect width="1178" height="608" x="1" y="1" rx="23" fill="none" stroke="url(#lightBorderGrad)" stroke-width="1.5" />
+
+  <!-- ==================== TOP WINDOW CONTROLS & HEADER ==================== -->
+  <g transform="translate(30, 24)">
+    <circle cx="10" cy="12" r="6" fill="#EF4444" />
+    <circle cx="28" cy="12" r="6" fill="#F59E0B" />
+    <circle cx="46" cy="12" r="6" fill="#10B981" />
+
+    <text x="70" y="16" class="mono text-muted" font-size="13">
+      atul@piet-rhel:~ <tspan fill="#2563EB">[</tspan><tspan fill="#059669">● ONLINE</tspan><tspan fill="#2563EB">]</tspan>
+    </text>
+
+    <!-- Top Navigation Tags -->
+    <g transform="translate(840, 0)">
+      <rect width="70" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+      <text x="35" y="15" text-anchor="middle" class="mono pill-text" fill="#475569">SYSTEM</text>
+
+      <rect x="78" y="0" width="65" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+      <text x="110" y="15" text-anchor="middle" class="mono pill-text" fill="#475569">STACK</text>
+
+      <rect x="150" y="0" width="80" height="22" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+      <text x="190" y="15" text-anchor="middle" class="mono pill-text" fill="#475569">PROJECTS</text>
+
+      <rect x="238" y="0" width="42" height="22" rx="6" fill="#DCFCE7" stroke="#10B981" stroke-width="1" />
+      <text x="259" y="15" text-anchor="middle" class="mono pill-text" fill="#047857">v2.0</text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="30" y1="58" x2="1150" y2="58" stroke="#E2E8F0" stroke-width="1" />
+
+  <!-- ==================== LEFT COLUMN (IDENTITY & VISUAL.MAP) ==================== -->
+  <g transform="translate(30, 75)">
+    <!-- Left Glass Panel -->
+    <rect width="440" height="505" rx="16" fill="url(#lightPanelGrad)" stroke="#CBD5E1" stroke-width="1.2" />
+
+    <!-- Panel Header Bar -->
+    <path d="M 0 16 Q 0 0 16 0 L 424 0 Q 440 0 440 16 L 440 36 L 0 36 Z" fill="#E2E8F0" />
+    <text x="16" y="23" class="mono text-blue" font-size="12" font-weight="700">VISUAL.MAP // IDENTITY_CORE</text>
+    <circle cx="418" cy="18" r="4" fill="#059669" />
+
+    <!-- ASCII Terminal Visual Art Box -->
+    <g transform="translate(20, 50)">
+      <rect width="400" height="270" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+      
+      <g class="mono ascii-text" transform="translate(25, 24)">
+        <text y="14" fill="#64748B">/* --- ATUL KUMAR // SYSTEMS ARCHITECTURE --- */</text>
+        <text y="30" fill="#DC2626">        .---.           [ROLE: RED HAT INTERN]</text>
+        <text y="44" fill="#DC2626">       /     \          [OS: RHEL 9 / LINUX]</text>
+        <text y="58" fill="#0284C7">      | () () |         [KERNEL: INOTIFY DAEMON]</text>
+        <text y="72" fill="#0284C7">       \  -  /          [CORE: JAVA • C++ • DSA]</text>
+        <text y="86" fill="#0284C7">      /       \         [CLOUD: SALESFORCE CRM]</text>
+        <text y="100" fill="#059669">     | |     | |        [DATABASE: MYSQL 8.0]</text>
+        <text y="114" fill="#059669">     | |     | |        [LEETCODE: SOLVER]</text>
+        <text y="128" fill="#7C3AED">     / \_____/ \        [ACADEMICS: PIET '28]</text>
+        <text y="142" fill="#7C3AED">    / /       \ \       [STATUS: ACTIVE_DISPATCH]</text>
+        <text y="160" fill="#0284C7">------------------------------------------------</text>
+        <text y="176" fill="#0F172A">&gt; Initializing security hooks &amp; system daemons...</text>
+        <text y="192" fill="#059669">&gt; Status: 100% OPERATIONAL • 0 KERNEL PANICS</text>
+      </g>
+    </g>
+
+    <!-- Left Bottom Supporting Info -->
+    <g transform="translate(24, 335)">
+      <text x="0" y="20" class="mono text-muted" font-size="11" letter-spacing="1">PRIMARY PROFILE IDENTITY</text>
+      <text x="0" y="44" class="sans" font-size="19" font-weight="700" fill="#0F172A">Red Hat Intern • Systems Eng.</text>
+      <text x="0" y="66" class="sans text-muted" font-size="13">B.Tech CSE @ Poornima Inst. of Engg. &amp; Tech.</text>
+
+      <g transform="translate(0, 85)">
+        <rect width="392" height="42" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" />
+        <text x="14" y="26" class="mono" font-size="13">
+          <tspan fill="#2563EB">~/profile</tspan> <tspan fill="#64748B">$</tspan> <tspan fill="#0F172A">build --enterprise-ready</tspan>
+          <tspan fill="#2563EB">
+            <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />_
+          </tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT COLUMN (SYSTEM.INFO DASHBOARD) ==================== -->
+  <g transform="translate(490, 75)">
+    <!-- Right Glass Panel -->
+    <rect width="660" height="505" rx="16" fill="url(#lightPanelGrad)" stroke="#CBD5E1" stroke-width="1.2" />
+
+    <!-- Panel Header Bar -->
+    <path d="M 0 16 Q 0 0 16 0 L 644 0 Q 660 0 660 16 L 660 36 L 0 36 Z" fill="#E2E8F0" />
+    <text x="20" y="23" class="mono text-blue" font-size="12" font-weight="700">SYSTEM.INFO // EXECUTIVE_SUMMARY</text>
+    <text x="560" y="23" class="mono text-muted" font-size="11">ENV: PRODUCTION</text>
+
+    <!-- Content Container -->
+    <g transform="translate(28, 48)">
+
+      <text x="0" y="28" class="sans text-title">Atul Kumar</text>
+      
+      <!-- Animated Rotating Role -->
+      <g transform="translate(0, 52)">
+        <text class="mono text-headline">
+          <tspan fill="#2563EB">⚡ </tspan>
+          <tspan fill="#0F172A">Red Hat Intern </tspan>
+          <tspan fill="#64748B">| </tspan>
+          <tspan fill="#0284C7">Salesforce Developer </tspan>
+          <tspan fill="#64748B">| </tspan>
+          <tspan fill="#7C3AED">Java &amp; C++ DSA</tspan>
+        </text>
+      </g>
+
+      <!-- Key Value System Properties Grid -->
+      <g transform="translate(0, 76)">
+        <g transform="translate(0, 0)">
+          <text x="0" y="16" class="mono text-blue">&gt; EXPERIENCE</text>
+          <text x="135" y="16" class="sans text-dark">Red Hat Intern <tspan fill="#64748B">(RHEL Administration &amp; CLI Workflows)</tspan></text>
+        </g>
+
+        <g transform="translate(0, 26)">
+          <text x="0" y="16" class="mono text-blue">&gt; EDUCATION</text>
+          <text x="135" y="16" class="sans text-dark">B.Tech in CSE @ PIET, Jaipur <tspan fill="#64748B">(2024 – 2028)</tspan></text>
+        </g>
+
+        <g transform="translate(0, 52)">
+          <text x="0" y="16" class="mono text-blue">&gt; CORE FOCUS</text>
+          <text x="135" y="16" class="sans text-dark">Linux Kernel Inotify, System Daemons, OOP &amp; DSA</text>
+        </g>
+
+        <g transform="translate(0, 78)">
+          <text x="0" y="16" class="mono text-blue">&gt; ACTIVE WORK</text>
+          <text x="135" y="16" class="sans text-dark">Sentinel-Guard <tspan fill="#059669">[Security Daemon]</tspan> &amp; LeetCode DSA</text>
+        </g>
+      </g>
+
+      <!-- Section: Tech Stack Badges Grid -->
+      <g transform="translate(0, 195)">
+        <text x="0" y="0" class="mono text-muted" font-size="11" letter-spacing="1">PRIMARY TECHNICAL ARSENAL</text>
+
+        <!-- Pills Row 1 -->
+        <g transform="translate(0, 12)">
+          <rect width="84" height="26" rx="6" fill="#FEE2E2" stroke="#DC2626" stroke-width="1" />
+          <text x="42" y="17" text-anchor="middle" class="mono pill-text" fill="#DC2626">Red Hat</text>
+
+          <rect x="92" y="0" width="70" height="26" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="1" />
+          <text x="127" y="17" text-anchor="middle" class="mono pill-text" fill="#B45309">Linux</text>
+
+          <rect x="170" y="0" width="68" height="26" rx="6" fill="#E0F2FE" stroke="#0284C7" stroke-width="1" />
+          <text x="204" y="17" text-anchor="middle" class="mono pill-text" fill="#0369A1">C++17</text>
+
+          <rect x="246" y="0" width="62" height="26" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="1" />
+          <text x="277" y="17" text-anchor="middle" class="mono pill-text" fill="#C2410C">Java</text>
+
+          <rect x="316" y="0" width="96" height="26" rx="6" fill="#E0F2FE" stroke="#0284C7" stroke-width="1" />
+          <text x="364" y="17" text-anchor="middle" class="mono pill-text" fill="#0284C7">Salesforce</text>
+
+          <rect x="420" y="0" width="64" height="26" rx="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1" />
+          <text x="452" y="17" text-anchor="middle" class="mono pill-text" fill="#15803D">Bash</text>
+
+          <rect x="492" y="0" width="72" height="26" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" />
+          <text x="528" y="17" text-anchor="middle" class="mono pill-text" fill="#1D4ED8">MySQL</text>
+        </g>
+
+        <!-- Pills Row 2 -->
+        <g transform="translate(0, 46)">
+          <rect width="90" height="26" rx="6" fill="#FEF9C3" stroke="#CA8A04" stroke-width="1" />
+          <text x="45" y="17" text-anchor="middle" class="mono pill-text" fill="#A16207">JavaScript</text>
+
+          <rect x="98" y="0" width="72" height="26" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="1" />
+          <text x="134" y="17" text-anchor="middle" class="mono pill-text" fill="#C2410C">HTML5</text>
+
+          <rect x="178" y="0" width="68" height="26" rx="6" fill="#E0F2FE" stroke="#0284C7" stroke-width="1" />
+          <text x="212" y="17" text-anchor="middle" class="mono pill-text" fill="#0369A1">CSS3</text>
+
+          <rect x="254" y="0" width="80" height="26" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1" />
+          <text x="294" y="17" text-anchor="middle" class="mono pill-text" fill="#1D4ED8">VS Code</text>
+
+          <rect x="342" y="0" width="74" height="26" rx="6" fill="#F3E8FF" stroke="#9333EA" stroke-width="1" />
+          <text x="379" y="17" text-anchor="middle" class="mono pill-text" fill="#7E22CE">IntelliJ</text>
+
+          <rect x="424" y="0" width="80" height="26" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1" />
+          <text x="464" y="17" text-anchor="middle" class="mono pill-text" fill="#B91C1C">Git/GitHub</text>
+        </g>
+      </g>
+
+      <!-- Section: Featured Projects Showcase -->
+      <g transform="translate(0, 292)">
+        <text x="0" y="0" class="mono text-muted" font-size="11" letter-spacing="1">FEATURED CODE REPOSITORIES</text>
+
+        <!-- Project 1 Card -->
+        <g transform="translate(0, 12)">
+          <rect width="290" height="66" rx="8" fill="#F8FAFC" stroke="#0284C7" stroke-width="1" />
+          <text x="14" y="24" class="sans" font-size="14" font-weight="700" fill="#0F172A">🛡️ Sentinel-Guard</text>
+          <text x="14" y="44" class="sans text-muted" font-size="11">Linux Kernel File Integrity &amp; Vault Daemon</text>
+          <text x="210" y="24" class="mono" font-size="11" font-weight="600" fill="#0284C7">[C++17/RHEL]</text>
+        </g>
+
+        <!-- Project 2 Card -->
+        <g transform="translate(306, 12)">
+          <rect width="290" height="66" rx="8" fill="#F8FAFC" stroke="#7C3AED" stroke-width="1" />
+          <text x="14" y="24" class="sans" font-size="14" font-weight="700" fill="#0F172A">🖼️ Image Search App</text>
+          <text x="14" y="44" class="sans text-muted" font-size="11">Real-Time Search Engine with Unsplash API</text>
+          <text x="210" y="24" class="mono" font-size="11" font-weight="600" fill="#7C3AED">[JS/REST]</text>
+        </g>
+      </g>
+
+      <!-- Bottom Verified Connect Links -->
+      <g transform="translate(0, 400)">
+        <line x1="0" y1="0" x2="600" y2="0" stroke="#CBD5E1" stroke-width="1" />
+        <text x="0" y="24" class="mono text-muted" font-size="12">
+          &gt; CONNECT: <tspan fill="#0284C7">github/Atulkumar5772</tspan> • <tspan fill="#0A66C2">linkedin/atul-kumar</tspan> • <tspan fill="#D97706">leetcode/atulkumar181005</tspan>
+        </text>
+      </g>
+
+    </g>
+  </g>
+</svg>
