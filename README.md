@@ -2,9 +2,9 @@
 
 <!-- 🌟 DYNAMIC ADAPTIVE HERO BANNER (DARK/LIGHT MODE) -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./light.svg">
-  <img src="./dark.svg" alt="Atul Kumar - Red Hat Intern and Systems Developer Profile Banner" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="./light.svg?v=2">
+  <img src="./dark.svg?v=2" alt="Atul Kumar - Cyber Terminal Developer Profile Banner" width="100%">
 </picture>
 
 <br>
