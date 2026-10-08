@@ -1,0 +1,309 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610" role="img" aria-label="Atul Kumar - Cyber Terminal Developer Profile Banner">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020611" />
+      <stop offset="60%" stop-color="#050D1A" />
+      <stop offset="100%" stop-color="#020712" />
+    </linearGradient>
+
+    <!-- Neon Cyan & Purple Glowing Border -->
+    <linearGradient id="neonBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF">
+        <animate attributeName="stop-color" values="#00F5FF;#7C3AED;#00F5FF" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#00F5FF;#7C3AED" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#00F5FF">
+        <animate attributeName="stop-color" values="#00F5FF;#7C3AED;#00F5FF" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Panel Borders -->
+    <linearGradient id="cyanPanelBorder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#0284C7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Portrait Gradient Fill -->
+    <linearGradient id="portraitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="80%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <!-- Scanlines -->
+    <pattern id="scanlines" width="100" height="3" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#00F5FF" stroke-opacity="0.04" stroke-width="1" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="laserGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .label { font-size: 13px; font-weight: 700; fill: #00F5FF; letter-spacing: 0.5px; }
+    .dots { font-size: 13px; fill: #1E293B; letter-spacing: 2px; }
+    .val { font-size: 13px; font-weight: 500; fill: #F8FAFC; }
+    .val-muted { font-size: 13px; fill: #94A3B8; }
+    .header-nav { font-size: 12px; font-weight: 500; fill: #64748B; }
+  </style>
+
+  <!-- Outer Frame -->
+  <rect width="1180" height="610" rx="26" fill="url(#bgGradient)" />
+  <rect width="1180" height="610" rx="26" fill="url(#scanlines)" />
+  <rect width="1176" height="606" x="2" y="2" rx="25" fill="none" stroke="url(#neonBorder)" stroke-width="2" filter="url(#subtleGlow)" />
+
+  <!-- ==================== TOP WINDOW CHROME ==================== -->
+  <g transform="translate(36, 26)">
+    <!-- Terminal Window Dots -->
+    <circle cx="10" cy="10" r="6" fill="#EF4444" />
+    <circle cx="28" cy="10" r="6" fill="#F59E0B" />
+    <circle cx="46" cy="10" r="6" fill="#10B981" />
+
+    <!-- File Tab Name -->
+    <text x="75" y="14" class="mono" font-size="13" font-weight="600" fill="#00F5FF">atulkumar/README.md</text>
+
+    <!-- Glowing Top Accent -->
+    <circle cx="370" cy="10" r="3" fill="#00F5FF">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Top Right Nav Labels -->
+    <g transform="translate(680, 0)">
+      <text x="0" y="14" class="mono header-nav">&lt;&gt; Code</text>
+      <text x="75" y="14" class="mono header-nav">[+] Projects</text>
+      <text x="175" y="14" class="mono header-nav">Experience</text>
+      <text x="270" y="14" class="mono header-nav">OO Contact</text>
+    </g>
+  </g>
+
+  <!-- ==================== LEFT PANEL: VISUAL.MAP (DOT-MATRIX / ASCII PORTRAIT) ==================== -->
+  <g transform="translate(36, 68)">
+    <!-- Panel Outer Glass Box -->
+    <rect width="470" height="505" rx="16" fill="#030816" fill-opacity="0.9" stroke="url(#cyanPanelBorder)" stroke-width="1.6" filter="url(#subtleGlow)" />
+
+    <!-- Tab Header Bar -->
+    <rect x="18" y="14" width="105" height="20" rx="4" fill="#00F5FF" fill-opacity="0.15" stroke="#00F5FF" stroke-opacity="0.6" stroke-width="1" />
+    <text x="26" y="28" class="mono" font-size="11" font-weight="700" fill="#00F5FF">VISUAL.MAP</text>
+
+    <!-- Dot-Matrix / ASCII Portrait Box -->
+    <g transform="translate(20, 48)">
+      <rect width="430" height="435" rx="10" fill="#020611" stroke="#0F172A" stroke-width="1" />
+
+      <!-- Moving Cyan Laser Scanline -->
+      <line x1="10" y1="0" x2="420" y2="0" stroke="#00F5FF" stroke-width="2" stroke-opacity="0.9" filter="url(#laserGlow)">
+        <animate attributeName="y1" values="20;415;20" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="20;415;20" dur="4s" repeatCount="indefinite" />
+      </line>
+
+      <!-- DENSE DOT-MATRIX & ASCII PORTRAIT (Atul Kumar - Systems & Developer Persona) -->
+      <g class="mono" fill="url(#portraitGrad)" font-size="7.5px" letter-spacing="1px" transform="translate(22, 28)">
+        <text y="0">::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</text>
+        <text y="10">::::::::::::::::::.·:*****+====+*****:·.::::::::::::::::::</text>
+        <text y="20">::::::::::::::.·*#@@@@@@@@@@@@@@@@@@@@@@#*·.::::::::::::::</text>
+        <text y="30">::::::::::::·*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*·::::::::::::</text>
+        <text y="40">:::::::::::+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+:::::::::::</text>
+        <text y="50">::::::::::#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#::::::::::</text>
+        <text y="60">:::::::::*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*:::::::::</text>
+        <text y="70">:::::::::%@@@@@@@@@###@@@@@@@@@@@@###@@@@@@@@@@@%:::::::::</text>
+        <text y="80">:::::::::@@@@@@@@*·...·*%@@@@@@%*·...·*@@@@@@@@@::::::::::</text>
+        <text y="90">:::::::::@@@@@@@+  ┌──┐  +@@@@+  ┌──┐  +@@@@@@@::::::::::: [HAIRSTYLE &amp;</text>
+        <text y="100">:::::::::@@@@@@%   │@@│   %@@%   │@@│   %@@@@@@:::::::::::  GLASSES]</text>
+        <text y="110">:::::::::@@@@@@#   └──┘   #@@#   └──┘   #@@@@@@:::::::::::</text>
+        <text y="120">:::::::::@@@@@@@*·......·*@@@@*·......·*@@@@@@@:::::::::::</text>
+        <text y="130">:::::::::*@@@@@@@@%%%%%@@@@@@@@@@%%%%%@@@@@@@@*:::::::::::</text>
+        <text y="140">::::::::::%@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@%::::::::::::</text>
+        <text y="150">:::::::::::*@@@@@@@@@@@@@@    @@@@@@@@@@@@@@*:::::::::::::</text>
+        <text y="160">::::::::::::+@@@@@@@@@@@@@-..-@@@@@@@@@@@@@+::::::::::::::</text>
+        <text y="170">:::::::::::::#@@@@@@@@@@@======@@@@@@@@@@@#::::::::::::::: [FACIAL CONTOUR]</text>
+        <text y="180">::::::::::::::*@@@@@@@@@@@@@@@@@@@@@@@@@@*::::::::::::::::</text>
+        <text y="190">:::::::::::::::*@@@@@@@@@@@@@@@@@@@@@@@@*:::::::::::::::::</text>
+        <text y="200">::::::::::::::::-%@@@@@@@@@@@@@@@@@@@@%-::::::::::::::::::</text>
+        <text y="210">::::::::::::::::::+#@@@@@@@@@@@@@@@@#+::::::::::::::::::::</text>
+        <text y="220">:::::::::::::::::::::*%@@@@@@@@@@%*:::::::::::::::::::::::</text>
+        <text y="230">:::::::::::::::::::::::·*#@@@@#*·:::::::::::::::::::::::::</text>
+        <text y="240">::::::::::::::::::::::::::+@@+::::::::::::::::::::::::::::</text>
+        <text y="250">::::::::::::::::::::::::::+@@+:::::::::::::::::::::::::::: [COLLAR &amp; NECK]</text>
+        <text y="260">::::::::::::::::::::::.·+*%@@%*+·.::::::::::::::::::::::::</text>
+        <text y="270">::::::::::::::::::.·*#@@@@@||@@@@@#*·.::::::::::::::::::::</text>
+        <text y="280">::::::::::::::.·+#@@@@@@@@/  \@@@@@@@@#+·.::::::::::::::::</text>
+        <text y="290">:::::::::::.·*#@@@@@@@@@@/ /\ \@@@@@@@@@@#*·.::::::::::::: [SUIT &amp; BLAZER]</text>
+        <text y="300">::::::::::·*%@@@@@@@@@@@/ /||\ \@@@@@@@@@@@%*·::::::::::::</text>
+        <text y="310">::::::::·*#@@@@@@@@@@@@/ / || \ \@@@@@@@@@@@@#*·::::::::::</text>
+        <text y="320">:::::::·%@@@@@@@@@@@@@/ /  ||  \ \@@@@@@@@@@@@@%·:::::::::</text>
+        <text y="330">:::::::#@@@@@@@@@@@@@/ /   ||   \ \@@@@@@@@@@@@@#:::::::::</text>
+        <text y="340">::::::*@@@@@@@@@@@@@/ /    ||    \ \@@@@@@@@@@@@@*::::::::</text>
+        <text y="350">:::::+@@@@@@@@@@@@@/ /     ||     \ \@@@@@@@@@@@@@+::::::: [ATUL KUMAR]</text>
+        <text y="360">::::%@@@@@@@@@@@@@/ /      ||      \ \@@@@@@@@@@@@@%::::::</text>
+        <text y="370">:::*@@@@@@@@@@@@@/ /       ||       \ \@@@@@@@@@@@@@*:::::</text>
+        <text y="380">:::#@@@@@@@@@@@@/ /        ||        \ \@@@@@@@@@@@@#:::::</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT PANEL: SYSTEM.INFO (CYBER TERMINAL DASHBOARD) ==================== -->
+  <g transform="translate(528, 68)">
+    <!-- Panel Outer Glass Box -->
+    <rect width="616" height="505" rx="16" fill="#030816" fill-opacity="0.9" stroke="url(#cyanPanelBorder)" stroke-width="1.6" filter="url(#subtleGlow)" />
+
+    <!-- Tab Header Bar -->
+    <rect x="18" y="14" width="105" height="20" rx="4" fill="#00F5FF" fill-opacity="0.15" stroke="#00F5FF" stroke-opacity="0.6" stroke-width="1" />
+    <text x="26" y="28" class="mono" font-size="11" font-weight="700" fill="#00F5FF">SYSTEM.INFO</text>
+
+    <!-- Top Right Status Indicator -->
+    <circle cx="538" cy="24" r="4.5" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="548" y="28" class="mono" font-size="12" font-weight="600" fill="#10B981">online</text>
+
+    <!-- Inner Terminal Content -->
+    <g transform="translate(24, 52)">
+
+      <!-- Command Prompt -->
+      <text x="0" y="16" class="mono" font-size="13">
+        <tspan fill="#00F5FF" font-weight="700">atul@developer:~#</tspan> <tspan fill="#F8FAFC" font-weight="600">./profile.sh</tspan>
+      </text>
+
+      <!-- ================= Profile Key-Values ================= -->
+      <g transform="translate(0, 42)">
+        
+        <!-- Name -->
+        <g transform="translate(0, 0)">
+          <text x="0" y="0" class="mono label">&gt; Name</text>
+          <text x="60" y="0" class="mono dots">.......................</text>
+          <text x="180" y="0" class="mono val" font-weight="700">Atul Kumar</text>
+        </g>
+
+        <!-- Role -->
+        <g transform="translate(0, 22)">
+          <text x="0" y="0" class="mono label">&gt; Role</text>
+          <text x="60" y="0" class="mono dots">.......................</text>
+          <text x="180" y="0" class="mono val">Red Hat Intern · Salesforce Dev</text>
+        </g>
+
+        <!-- Location -->
+        <g transform="translate(0, 44)">
+          <text x="0" y="0" class="mono label">&gt; Location</text>
+          <text x="85" y="0" class="mono dots">...................</text>
+          <text x="180" y="0" class="mono val">Jaipur, India</text>
+        </g>
+
+        <!-- Experience -->
+        <g transform="translate(0, 66)">
+          <text x="0" y="0" class="mono label">&gt; Experience</text>
+          <text x="100" y="0" class="mono dots">.................</text>
+          <text x="180" y="0" class="mono val">B.Tech CSE @ PIET (2024–2028)</text>
+        </g>
+
+        <!-- Stack -->
+        <g transform="translate(0, 88)">
+          <text x="0" y="0" class="mono label">&gt; Stack</text>
+          <text x="65" y="0" class="mono dots">......................</text>
+          <text x="180" y="0" class="mono val">Java, C++, Linux/RHEL, Salesforce</text>
+          <text x="180" y="16" class="mono val-muted">MySQL, Bash, JS, Android Studio, IntelliJ</text>
+        </g>
+
+        <!-- Focus -->
+        <g transform="translate(0, 126)">
+          <text x="0" y="0" class="mono label">&gt; Focus</text>
+          <text x="65" y="0" class="mono dots">......................</text>
+          <text x="180" y="0" class="mono val">Linux Kernel inotify, System Daemons, DSA</text>
+        </g>
+
+        <!-- Interests -->
+        <g transform="translate(0, 148)">
+          <text x="0" y="0" class="mono label">&gt; Interests</text>
+          <text x="90" y="0" class="mono dots">..................</text>
+          <text x="180" y="0" class="mono val">Systems Security, Enterprise Cloud, Problem Solving</text>
+        </g>
+
+        <!-- ================= Projects Section ================= -->
+        <g transform="translate(0, 182)">
+          <text x="0" y="0" class="mono label">&gt; Projects</text>
+
+          <g transform="translate(10, 20)">
+            <circle cx="2" cy="-4" r="2.5" fill="#00F5FF" />
+            <text x="12" y="0" class="mono val" font-weight="700">Sentinel-Guard</text>
+            <text x="135" y="0" class="mono dots">............</text>
+            <text x="185" y="0" class="mono val-muted">Linux Kernel File Integrity &amp; Vault Daemon</text>
+          </g>
+
+          <g transform="translate(10, 40)">
+            <circle cx="2" cy="-4" r="2.5" fill="#00F5FF" />
+            <text x="12" y="0" class="mono val" font-weight="700">Image Search</text>
+            <text x="125" y="0" class="mono dots">.............</text>
+            <text x="185" y="0" class="mono val-muted">Real-Time Search App with Unsplash REST API</text>
+          </g>
+        </g>
+
+        <!-- ================= Links Section ================= -->
+        <g transform="translate(0, 260)">
+          <text x="0" y="0" class="mono label">&gt; Links</text>
+
+          <!-- GitHub -->
+          <g transform="translate(15, 20)">
+            <path d="M 0 0 C 0 -3 2 -5 5 -5 C 8 -5 10 -3 10 0 C 10 2 8 4 6 5 L 6 7 L 4 7 L 4 5 C 2 4 0 2 0 0 Z" fill="#00F5FF" transform="scale(0.8) translate(0, -6)" />
+            <text x="18" y="0" class="mono val">GitHub</text>
+            <text x="80" y="0" class="mono dots">.....................</text>
+            <text x="175" y="0" class="mono" fill="#38BDF8">github.com/Atulkumar5772</text>
+          </g>
+
+          <!-- LinkedIn -->
+          <g transform="translate(15, 40)">
+            <rect x="0" y="-10" width="10" height="10" rx="2" fill="#00F5FF" />
+            <text x="18" y="0" class="mono val">LinkedIn</text>
+            <text x="90" y="0" class="mono dots">...................</text>
+            <text x="175" y="0" class="mono" fill="#38BDF8">linkedin.com/in/atul-kumar-454b34380</text>
+          </g>
+
+          <!-- LeetCode -->
+          <g transform="translate(15, 60)">
+            <circle cx="5" cy="-5" r="4.5" fill="#FFA116" />
+            <text x="18" y="0" class="mono val">LeetCode</text>
+            <text x="90" y="0" class="mono dots">...................</text>
+            <text x="175" y="0" class="mono" fill="#FFA116">leetcode.com/u/atulkumar181005</text>
+          </g>
+
+          <!-- Email -->
+          <g transform="translate(15, 80)">
+            <rect x="0" y="-9" width="10" height="8" rx="1" fill="#EA4335" />
+            <text x="18" y="0" class="mono val">Email</text>
+            <text x="65" y="0" class="mono dots">.......................</text>
+            <text x="175" y="0" class="mono" fill="#38BDF8">atulchoudhary181005@gmail.com</text>
+          </g>
+        </g>
+
+      </g>
+
+      <!-- Bottom Shell Prompt with Blinking Block Cursor -->
+      <g transform="translate(0, 420)">
+        <text x="0" y="0" class="mono" font-size="13">
+          <tspan fill="#00F5FF" font-weight="700">atul@developer:~#</tspan>
+          <tspan fill="#00F5FF" font-weight="900">
+            <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite" /> █
+          </tspan>
+        </text>
+      </g>
+
+    </g>
+  </g>
+</svg>
