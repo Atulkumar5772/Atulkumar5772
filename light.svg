@@ -1,241 +1,370 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610" role="img" aria-label="Atul Kumar - Cyber Terminal Developer Profile Banner (Light Mode)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 680" width="100%" height="100%">
   <defs>
-    <linearGradient id="lightBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="60%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF6FF" />
+    <!-- Background & Terminal Gradients (Light Theme) -->
+    <radialGradient id="screen-glow-light" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#f8fafc" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#eef6ff" stop-opacity="1"/>
+    </radialGradient>
+
+    <linearGradient id="neon-blue-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
     </linearGradient>
 
-    <linearGradient id="lightBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7" />
-      <stop offset="50%" stop-color="#2563EB" />
-      <stop offset="100%" stop-color="#059669" />
+    <linearGradient id="stream-flow-light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="lightPanelBorder" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.5" />
-    </linearGradient>
-
-    <linearGradient id="lightPortraitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7" />
-      <stop offset="50%" stop-color="#2563EB" />
-      <stop offset="100%" stop-color="#7C3AED" />
-    </linearGradient>
-
-    <filter id="lightLaserGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <!-- Glow Filters -->
+    <filter id="blue-glow-light" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
       <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Matrix Dot Pattern -->
+    <pattern id="matrix-dots-light" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="0.8" fill="#0284c7" opacity="0.18"/>
+    </pattern>
+
+    <!-- Scanline Mask -->
+    <linearGradient id="scan-grad-light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Animated blue flow -->
+    <linearGradient id="flow-gradient-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0"/>
+      <stop offset="22%" stop-color="#0284c7" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#7c3aed" stop-opacity="1"/>
+      <stop offset="78%" stop-color="#0284c7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Portrait Contours Gradient -->
+    <linearGradient id="portrait-glow-grad-light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="85%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <!-- Motion Paths -->
+    <path id="outer-flow-path-light"
+          d="M35 35 H1065 Q1080 35 1080 50 V630 Q1080 645 1065 645 H35 Q20 645 20 630 V50 Q20 35 35 35"
+          fill="none"/>
+
+    <path id="left-flow-path-light"
+          d="M49 75 H491 Q505 75 505 89 V556 Q505 570 491 570 H49 Q35 570 35 556 V89 Q35 75 49 75"
+          fill="none"/>
+
+    <path id="right-flow-path-light"
+          d="M539 75 H1036 Q1050 75 1050 89 V556 Q1050 570 1036 570 H539 Q525 570 525 556 V89 Q525 75 539 75"
+          fill="none"/>
+
+    <clipPath id="left-panel-clip-light">
+      <rect x="10" y="24" width="450" height="460" rx="8"/>
+    </clipPath>
   </defs>
 
   <style>
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
-    .label { font-size: 13px; font-weight: 700; fill: #0284C7; letter-spacing: 0.5px; }
-    .dots { font-size: 13px; fill: #CBD5E1; letter-spacing: 2px; }
-    .val { font-size: 13px; font-weight: 600; fill: #0F172A; }
-    .val-muted { font-size: 13px; fill: #64748B; }
-    .header-nav { font-size: 12px; font-weight: 500; fill: #64748B; }
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+    }
+    .label-blue { fill: #0284c7; font-weight: 700; }
+    .muted-dots-light { fill: #cbd5e1; letter-spacing: 3px; font-weight: 400; }
+    .dark-text { fill: #0f172a; font-weight: 600; }
+    .sub-text-light { fill: #64748b; }
+    
+    @keyframes pulse-flow {
+      0%, 100% { opacity: 0.35; stroke-dashoffset: 0; }
+      50% { opacity: 0.85; stroke-dashoffset: -40; }
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes radar-scan {
+      0% { transform: translateY(0px); opacity: 0; }
+      15% { opacity: 0.85; }
+      85% { opacity: 0.85; }
+      100% { transform: translateY(440px); opacity: 0; }
+    }
+    .radar-line {
+      animation: radar-scan 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .cursor-blink {
+      animation: blink 0.9s infinite;
+    }
+    .animated-wire-light {
+      stroke-dasharray: 8 12;
+      animation: pulse-flow 3s linear infinite;
+    }
+
+    .flow-border-light {
+      fill: none;
+      stroke: url(#flow-gradient-light);
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 26 150;
+    }
+    .flow-border-soft-light {
+      fill: none;
+      stroke: #0284c7;
+      stroke-width: 1;
+      stroke-opacity: 0.25;
+      stroke-dasharray: 4 18;
+    }
+    .flow-particle-light {
+      fill: #0284c7;
+    }
+    .flow-particle-purple-light {
+      fill: #7c3aed;
+    }
+
+    .cyber-line-light {
+      stroke: url(#portrait-glow-grad-light);
+      stroke-linecap: round;
+      fill: none;
+    }
   </style>
 
-  <rect width="1180" height="610" rx="26" fill="url(#lightBgGrad)" />
-  <rect width="1176" height="606" x="2" y="2" rx="25" fill="none" stroke="url(#lightBorder)" stroke-width="1.8" />
+  <!-- Outer Display Housing -->
+  <rect x="15" y="15" width="1070" height="650" rx="20" fill="#f8fafc" stroke="#0284c7" stroke-width="1.8" stroke-opacity="0.8"/>
+  <rect x="18" y="18" width="1064" height="644" rx="18" fill="url(#screen-glow-light)"/>
 
-  <!-- Window Chrome -->
-  <g transform="translate(36, 26)">
-    <circle cx="10" cy="10" r="6" fill="#EF4444" />
-    <circle cx="28" cy="10" r="6" fill="#F59E0B" />
-    <circle cx="46" cy="10" r="6" fill="#10B981" />
+  <!-- Flow System -->
+  <g pointer-events="none">
+    <use href="#outer-flow-path-light" class="flow-border-soft-light">
+      <animate attributeName="stroke-dashoffset" from="0" to="-110" dur="9s" repeatCount="indefinite"/>
+    </use>
+    <use href="#left-flow-path-light" class="flow-border-soft-light">
+      <animate attributeName="stroke-dashoffset" from="0" to="-90" dur="7s" repeatCount="indefinite"/>
+    </use>
+    <use href="#right-flow-path-light" class="flow-border-soft-light">
+      <animate attributeName="stroke-dashoffset" from="0" to="-90" dur="8s" repeatCount="indefinite"/>
+    </use>
 
-    <text x="75" y="14" class="mono" font-size="13" font-weight="600" fill="#0284C7">atulkumar/README.md</text>
-    <circle cx="370" cy="10" r="3" fill="#0284C7" />
+    <use href="#outer-flow-path-light" class="flow-border-light">
+      <animate attributeName="stroke-dashoffset" from="0" to="-880" dur="6s" repeatCount="indefinite"/>
+    </use>
+    <use href="#left-flow-path-light" class="flow-border-light">
+      <animate attributeName="stroke-dashoffset" from="0" to="-620" dur="5s" repeatCount="indefinite"/>
+    </use>
+    <use href="#right-flow-path-light" class="flow-border-light">
+      <animate attributeName="stroke-dashoffset" from="0" to="-620" dur="5.8s" begin="-1.4s" repeatCount="indefinite"/>
+    </use>
 
-    <g transform="translate(680, 0)">
-      <text x="0" y="14" class="mono header-nav">&lt;&gt; Code</text>
-      <text x="75" y="14" class="mono header-nav">[+] Projects</text>
-      <text x="175" y="14" class="mono header-nav">Experience</text>
-      <text x="270" y="14" class="mono header-nav">OO Contact</text>
-    </g>
+    <circle r="3.2" class="flow-particle-light">
+      <animateMotion dur="5.5s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#outer-flow-path-light"/>
+      </animateMotion>
+    </circle>
+    <circle r="2.2" class="flow-particle-purple-light">
+      <animateMotion dur="7s" begin="-2.2s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#outer-flow-path-light"/>
+      </animateMotion>
+    </circle>
+    <circle r="2.6" class="flow-particle-light">
+      <animateMotion dur="4.7s" begin="-1.1s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#left-flow-path-light"/>
+      </animateMotion>
+    </circle>
+    <circle r="2.6" class="flow-particle-purple-light">
+      <animateMotion dur="5.2s" begin="-2.7s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#right-flow-path-light"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- Top Bar Navigation -->
+  <circle cx="48" cy="46" r="6" fill="#ff5f56"/>
+  <circle cx="68" cy="46" r="6" fill="#ffbd2e"/>
+  <circle cx="88" cy="46" r="6" fill="#27c93f"/>
+
+  <text x="114" y="50" class="font-mono label-blue" font-size="14">atulkumar/README.md</text>
+
+  <g class="font-mono" font-size="11.5" fill="#64748b">
+    <text x="660" y="50">&lt;&gt; Code</text>
+    <rect x="735" y="41" width="11" height="11" rx="2" fill="none" stroke="#64748b" stroke-width="1.2"/>
+    <path d="M738 46h5M740.5 43.5v5" stroke="#64748b" stroke-width="1.2"/>
+    <text x="752" y="50">Projects</text>
+    <rect x="835" y="41" width="12" height="11" rx="1.5" fill="none" stroke="#64748b" stroke-width="1.2"/>
+    <path d="M835 44h12" stroke="#64748b" stroke-width="1.2"/>
+    <text x="854" y="50">Experience</text>
+    <circle cx="940" cy="46" r="3" fill="none" stroke="#64748b" stroke-width="1.2"/>
+    <circle cx="948" cy="46" r="3" fill="none" stroke="#64748b" stroke-width="1.2"/>
+    <text x="956" y="50">Contact</text>
   </g>
 
   <!-- Left Panel -->
-  <g transform="translate(36, 68)">
-    <rect width="470" height="505" rx="16" fill="#FFFFFF" stroke="url(#lightPanelBorder)" stroke-width="1.5" />
-    <rect x="18" y="14" width="105" height="20" rx="4" fill="#E0F2FE" stroke="#0284C7" stroke-width="1" />
-    <text x="26" y="28" class="mono" font-size="11" font-weight="700" fill="#0284C7">VISUAL.MAP</text>
+  <g transform="translate(35, 75)">
+    <rect width="470" height="495" rx="14" fill="#ffffff" fill-opacity="0.9" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.5"/>
+    <rect width="470" height="495" rx="14" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="80 320" class="animated-wire-light"/>
 
-    <g transform="translate(20, 48)">
-      <rect width="430" height="435" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+    <path d="M 12 0 L 115 0 L 105 18 L 12 18 Z" fill="#0284c7" fill-opacity="0.12"/>
+    <text x="18" y="13" class="font-mono label-blue" font-size="10" letter-spacing="1.5">VISUAL.MAP</text>
 
-      <!-- Scanline -->
-      <line x1="10" y1="0" x2="420" y2="0" stroke="#0284C7" stroke-width="2" stroke-opacity="0.8" filter="url(#lightLaserGlow)">
-        <animate attributeName="y1" values="20;415;20" dur="4s" repeatCount="indefinite" />
-        <animate attributeName="y2" values="20;415;20" dur="4s" repeatCount="indefinite" />
-      </line>
+    <rect x="10" y="24" width="450" height="460" fill="url(#matrix-dots-light)" rx="8"/>
 
-      <!-- ASCII Portrait -->
-      <g class="mono" fill="url(#lightPortraitGrad)" font-size="7.5px" letter-spacing="1px" transform="translate(22, 28)">
-        <text y="0">::::::::::::::::::::::::::::::::::::::::::::::::::::::::::</text>
-        <text y="10">::::::::::::::::::.·:*****+====+*****:·.::::::::::::::::::</text>
-        <text y="20">::::::::::::::.·*#@@@@@@@@@@@@@@@@@@@@@@#*·.::::::::::::::</text>
-        <text y="30">::::::::::::·*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*·::::::::::::</text>
-        <text y="40">:::::::::::+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+:::::::::::</text>
-        <text y="50">::::::::::#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#::::::::::</text>
-        <text y="60">:::::::::*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*:::::::::</text>
-        <text y="70">:::::::::%@@@@@@@@@###@@@@@@@@@@@@###@@@@@@@@@@@%:::::::::</text>
-        <text y="80">:::::::::@@@@@@@@*·...·*%@@@@@@%*·...·*@@@@@@@@@::::::::::</text>
-        <text y="90">:::::::::@@@@@@@+  ┌──┐  +@@@@+  ┌──┐  +@@@@@@@::::::::::: [HAIRSTYLE &amp;</text>
-        <text y="100">:::::::::@@@@@@%   │@@│   %@@%   │@@│   %@@@@@@:::::::::::  GLASSES]</text>
-        <text y="110">:::::::::@@@@@@#   └──┘   #@@#   └──┘   #@@@@@@:::::::::::</text>
-        <text y="120">:::::::::@@@@@@@*·......·*@@@@*·......·*@@@@@@@:::::::::::</text>
-        <text y="130">:::::::::*@@@@@@@@%%%%%@@@@@@@@@@%%%%%@@@@@@@@*:::::::::::</text>
-        <text y="140">::::::::::%@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@%::::::::::::</text>
-        <text y="150">:::::::::::*@@@@@@@@@@@@@@    @@@@@@@@@@@@@@*:::::::::::::</text>
-        <text y="160">::::::::::::+@@@@@@@@@@@@@-..-@@@@@@@@@@@@@+::::::::::::::</text>
-        <text y="170">:::::::::::::#@@@@@@@@@@@======@@@@@@@@@@@#::::::::::::::: [FACIAL CONTOUR]</text>
-        <text y="180">::::::::::::::*@@@@@@@@@@@@@@@@@@@@@@@@@@*::::::::::::::::</text>
-        <text y="190">:::::::::::::::*@@@@@@@@@@@@@@@@@@@@@@@@*:::::::::::::::::</text>
-        <text y="200">::::::::::::::::-%@@@@@@@@@@@@@@@@@@@@%-::::::::::::::::::</text>
-        <text y="210">::::::::::::::::::+#@@@@@@@@@@@@@@@@#+::::::::::::::::::::</text>
-        <text y="220">:::::::::::::::::::::*%@@@@@@@@@@%*:::::::::::::::::::::::</text>
-        <text y="230">:::::::::::::::::::::::·*#@@@@#*·:::::::::::::::::::::::::</text>
-        <text y="240">::::::::::::::::::::::::::+@@+::::::::::::::::::::::::::::</text>
-        <text y="250">::::::::::::::::::::::::::+@@+:::::::::::::::::::::::::::: [COLLAR &amp; NECK]</text>
-        <text y="260">::::::::::::::::::::::.·+*%@@%*+·.::::::::::::::::::::::::</text>
-        <text y="270">::::::::::::::::::.·*#@@@@@||@@@@@#*·.::::::::::::::::::::</text>
-        <text y="280">::::::::::::::.·+#@@@@@@@@/  \@@@@@@@@#+·.::::::::::::::::</text>
-        <text y="290">:::::::::::.·*#@@@@@@@@@@/ /\ \@@@@@@@@@@#*·.::::::::::::: [SUIT &amp; BLAZER]</text>
-        <text y="300">::::::::::·*%@@@@@@@@@@@/ /||\ \@@@@@@@@@@@%*·::::::::::::</text>
-        <text y="310">::::::::·*#@@@@@@@@@@@@/ / || \ \@@@@@@@@@@@@#*·::::::::::</text>
-        <text y="320">:::::::·%@@@@@@@@@@@@@/ /  ||  \ \@@@@@@@@@@@@@%·:::::::::</text>
-        <text y="330">:::::::#@@@@@@@@@@@@@/ /   ||   \ \@@@@@@@@@@@@@#:::::::::</text>
-        <text y="340">::::::*@@@@@@@@@@@@@/ /    ||    \ \@@@@@@@@@@@@@*::::::::</text>
-        <text y="350">:::::+@@@@@@@@@@@@@/ /     ||     \ \@@@@@@@@@@@@@+::::::: [ATUL KUMAR]</text>
-        <text y="360">::::%@@@@@@@@@@@@@/ /      ||      \ \@@@@@@@@@@@@@%::::::</text>
-        <text y="370">:::*@@@@@@@@@@@@@/ /       ||       \ \@@@@@@@@@@@@@*:::::</text>
-        <text y="380">:::#@@@@@@@@@@@@/ /        ||        \ \@@@@@@@@@@@@#:::::</text>
-      </g>
+    <g class="radar-line">
+      <line x1="12" y1="28" x2="458" y2="28" stroke="url(#neon-blue-light)" stroke-width="1.8"/>
+      <polygon points="12,28 458,28 458,58 12,58" fill="url(#stream-flow-light)" opacity="0.4"/>
+    </g>
+
+    <!-- High-Precision Portrait Vector -->
+    <g clip-path="url(#left-panel-clip-light)">
+      <path d="M 235 90 C 190 90, 160 120, 155 170 C 150 215, 160 255, 175 295 C 195 345, 230 368, 235 368 C 240 368, 275 345, 295 295 C 310 255, 320 215, 315 170 C 310 120, 280 90, 235 90 Z" fill="#f1f5f9"/>
+
+      <path d="M 160 155 Q 185 85, 235 85 Q 285 85, 310 155" class="cyber-line-light" stroke-width="2.5" stroke-dasharray="2 6"/>
+      <path d="M 165 142 Q 195 98, 235 98 Q 275 98, 305 142" class="cyber-line-light" stroke-width="2" stroke-dasharray="3 5"/>
+      <path d="M 172 130 Q 200 110, 235 110 Q 270 110, 298 130" class="cyber-line-light" stroke-width="1.8" stroke-dasharray="2 4"/>
+
+      <path d="M 155 155 Q 150 190, 156 225 Q 162 250, 170 270" class="cyber-line-light" stroke-width="2.2" stroke-dasharray="2 5"/>
+      <path d="M 315 155 Q 320 190, 314 225 Q 308 250, 300 270" class="cyber-line-light" stroke-width="2.2" stroke-dasharray="2 5"/>
+
+      <!-- Glasses -->
+      <rect x="175" y="215" width="46" height="34" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="2.6"/>
+      <line x1="182" y1="222" x2="202" y2="242" stroke="#0284c7" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+      <path d="M 221 228 Q 235 224, 249 228" class="cyber-line-light" stroke-width="2.6"/>
+
+      <rect x="249" y="215" width="46" height="34" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="2.6"/>
+      <line x1="256" y1="222" x2="276" y2="242" stroke="#0284c7" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+      <line x1="175" y1="228" x2="155" y2="222" stroke="#0284c7" stroke-width="2"/>
+      <line x1="295" y1="228" x2="315" y2="222" stroke="#0284c7" stroke-width="2"/>
+
+      <!-- Jawline -->
+      <path d="M 170 272 Q 185 330, 235 348 Q 285 330, 300 272" class="cyber-line-light" stroke-width="2.4" stroke-dasharray="3 6"/>
+      <path d="M 218 308 Q 235 316, 252 308" class="cyber-line-light" stroke-width="1.8" stroke-dasharray="2 3"/>
+
+      <!-- Neck & Shoulders -->
+      <path d="M 205 340 L 205 385" class="cyber-line-light" stroke-width="2" stroke-dasharray="2 6"/>
+      <path d="M 265 340 L 265 385" class="cyber-line-light" stroke-width="2" stroke-dasharray="2 6"/>
+      <path d="M 195 380 Q 235 410, 275 380" class="cyber-line-light" stroke-width="2.5" stroke-dasharray="3 5"/>
+
+      <path d="M 195 380 C 160 388, 110 415, 75 470" class="cyber-line-light" stroke-width="2.8" stroke-dasharray="4 6"/>
+      <path d="M 275 380 C 310 388, 360 415, 395 470" class="cyber-line-light" stroke-width="2.8" stroke-dasharray="4 6"/>
+      <path d="M 195 380 L 165 485" class="cyber-line-light" stroke-width="2.2" stroke-dasharray="3 5"/>
+      <path d="M 275 380 L 305 485" class="cyber-line-light" stroke-width="2.2" stroke-dasharray="3 5"/>
     </g>
   </g>
 
   <!-- Right Panel -->
-  <g transform="translate(528, 68)">
-    <rect width="616" height="505" rx="16" fill="#FFFFFF" stroke="url(#lightPanelBorder)" stroke-width="1.5" />
-    <rect x="18" y="14" width="105" height="20" rx="4" fill="#E0F2FE" stroke="#0284C7" stroke-width="1" />
-    <text x="26" y="28" class="mono" font-size="11" font-weight="700" fill="#0284C7">SYSTEM.INFO</text>
+  <g transform="translate(525, 75)">
+    <rect width="525" height="495" rx="14" fill="#ffffff" fill-opacity="0.9" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.5"/>
+    <rect width="525" height="495" rx="14" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="80 320" class="animated-wire-light"/>
 
-    <circle cx="538" cy="24" r="4.5" fill="#10B981" />
-    <text x="548" y="28" class="mono" font-size="12" font-weight="600" fill="#10B981">online</text>
+    <path d="M 12 0 L 115 0 L 105 18 L 12 18 Z" fill="#0284c7" fill-opacity="0.12"/>
+    <text x="18" y="13" class="font-mono label-blue" font-size="10" letter-spacing="1.5">SYSTEM.INFO</text>
 
-    <g transform="translate(24, 52)">
-      <text x="0" y="16" class="mono" font-size="13">
-        <tspan fill="#0284C7" font-weight="700">atul@developer:~#</tspan> <tspan fill="#0F172A" font-weight="600">./profile.sh</tspan>
+    <g transform="translate(435, 12)">
+      <circle cx="6" cy="4" r="3.5" fill="#16a34a"/>
+      <text x="16" y="8" class="font-mono" font-size="11" font-weight="600" fill="#16a34a">online</text>
+    </g>
+
+    <g transform="translate(20, 42)">
+      <text x="0" y="0" class="font-mono" font-size="13" font-weight="700">
+        <tspan fill="#0284c7">atul@developer</tspan><tspan fill="#64748b">:~# </tspan><tspan fill="#0f172a">./profile.sh</tspan>
       </text>
+    </g>
 
-      <g transform="translate(0, 42)">
-        <g transform="translate(0, 0)">
-          <text x="0" y="0" class="mono label">&gt; Name</text>
-          <text x="60" y="0" class="mono dots">.......................</text>
-          <text x="180" y="0" class="mono val" font-weight="700">Atul Kumar</text>
-        </g>
+    <g transform="translate(20, 72)" class="font-mono" font-size="12.2">
+      <text y="0" class="label-blue">&gt; Name</text>
+      <text x="80" y="0" class="muted-dots-light">.......................</text>
+      <text x="210" y="0" class="dark-text">Atul Kumar</text>
 
-        <g transform="translate(0, 22)">
-          <text x="0" y="0" class="mono label">&gt; Role</text>
-          <text x="60" y="0" class="mono dots">.......................</text>
-          <text x="180" y="0" class="mono val">Red Hat Intern · Salesforce Dev</text>
-        </g>
+      <text y="24" class="label-blue">&gt; Role</text>
+      <text x="80" y="24" class="muted-dots-light">.......................</text>
+      <text x="210" y="24" class="dark-text">Red Hat Intern · Salesforce Dev</text>
 
-        <g transform="translate(0, 44)">
-          <text x="0" y="0" class="mono label">&gt; Location</text>
-          <text x="85" y="0" class="mono dots">...................</text>
-          <text x="180" y="0" class="mono val">Jaipur, India</text>
-        </g>
+      <text y="48" class="label-blue">&gt; Location</text>
+      <text x="80" y="48" class="muted-dots-light">...................</text>
+      <text x="210" y="48" class="dark-text">Jaipur, India</text>
 
-        <g transform="translate(0, 66)">
-          <text x="0" y="0" class="mono label">&gt; Experience</text>
-          <text x="100" y="0" class="mono dots">.................</text>
-          <text x="180" y="0" class="mono val">B.Tech CSE @ PIET (2024–2028)</text>
-        </g>
+      <text y="72" class="label-blue">&gt; Experience</text>
+      <text x="96" y="72" class="muted-dots-light">.................</text>
+      <text x="210" y="72" class="dark-text">B.Tech CSE @ PIET (2024–2028)</text>
 
-        <g transform="translate(0, 88)">
-          <text x="0" y="0" class="mono label">&gt; Stack</text>
-          <text x="65" y="0" class="mono dots">......................</text>
-          <text x="180" y="0" class="mono val">Java, C++, Linux/RHEL, Salesforce</text>
-          <text x="180" y="16" class="mono val-muted">MySQL, Bash, JS, Android Studio, IntelliJ</text>
-        </g>
+      <text y="96" class="label-blue">&gt; Stack</text>
+      <text x="80" y="96" class="muted-dots-light">......................</text>
+      <text x="210" y="96" class="dark-text">Java, C++, Linux/RHEL, Salesforce</text>
+      <text x="210" y="114" class="sub-text-light">MySQL, HTML5, CSS3, JS, Bash</text>
 
-        <g transform="translate(0, 126)">
-          <text x="0" y="0" class="mono label">&gt; Focus</text>
-          <text x="65" y="0" class="mono dots">......................</text>
-          <text x="180" y="0" class="mono val">Linux Kernel inotify, System Daemons, DSA</text>
-        </g>
+      <text y="142" class="label-blue">&gt; Focus</text>
+      <text x="80" y="142" class="muted-dots-light">......................</text>
+      <text x="210" y="142" class="dark-text">Linux Kernel inotify, System Daemons, DSA</text>
 
-        <g transform="translate(0, 148)">
-          <text x="0" y="0" class="mono label">&gt; Interests</text>
-          <text x="90" y="0" class="mono dots">..................</text>
-          <text x="180" y="0" class="mono val">Systems Security, Enterprise Cloud, Problem Solving</text>
-        </g>
+      <text y="168" class="label-blue">&gt; Interests</text>
+      <text x="90" y="168" class="muted-dots-light">..................</text>
+      <text x="210" y="168" class="dark-text">Systems Security, Enterprise Cloud</text>
 
-        <!-- Projects -->
-        <g transform="translate(0, 182)">
-          <text x="0" y="0" class="mono label">&gt; Projects</text>
+      <text y="200" class="label-blue" font-weight="700">&gt; Projects</text>
+      
+      <text x="14" y="222" fill="#0284c7">•</text>
+      <text x="28" y="222" fill="#0284c7" font-weight="600">Sentinel-Guard</text>
+      <text x="135" y="222" class="muted-dots-light">...........</text>
+      <text x="210" y="222" class="dark-text">Linux Kernel File Integrity Daemon</text>
 
-          <g transform="translate(10, 20)">
-            <circle cx="2" cy="-4" r="2.5" fill="#0284C7" />
-            <text x="12" y="0" class="mono val" font-weight="700">Sentinel-Guard</text>
-            <text x="135" y="0" class="mono dots">............</text>
-            <text x="185" y="0" class="mono val-muted">Linux Kernel File Integrity &amp; Vault Daemon</text>
-          </g>
+      <text x="14" y="244" fill="#0284c7">•</text>
+      <text x="28" y="244" fill="#0284c7" font-weight="600">Image Search</text>
+      <text x="120" y="244" class="muted-dots-light">..............</text>
+      <text x="210" y="244" class="dark-text">Real-Time Search App (Unsplash API)</text>
 
-          <g transform="translate(10, 40)">
-            <circle cx="2" cy="-4" r="2.5" fill="#0284C7" />
-            <text x="12" y="0" class="mono val" font-weight="700">Image Search</text>
-            <text x="125" y="0" class="mono dots">.............</text>
-            <text x="185" y="0" class="mono val-muted">Real-Time Search App with Unsplash REST API</text>
-          </g>
-        </g>
+      <text x="14" y="266" fill="#0284c7">•</text>
+      <text x="28" y="266" fill="#0284c7" font-weight="600">LeetCode DSA</text>
+      <text x="120" y="266" class="muted-dots-light">..............</text>
+      <text x="210" y="266" class="dark-text">Algorithmic Problem Solving in Java/C++</text>
 
-        <!-- Links -->
-        <g transform="translate(0, 260)">
-          <text x="0" y="0" class="mono label">&gt; Links</text>
+      <text y="302" class="label-blue" font-weight="700">&gt; Links</text>
 
-          <g transform="translate(15, 20)">
-            <text x="18" y="0" class="mono val">GitHub</text>
-            <text x="80" y="0" class="mono dots">.....................</text>
-            <text x="175" y="0" class="mono" fill="#0284C7">github.com/Atulkumar5772</text>
-          </g>
-
-          <g transform="translate(15, 40)">
-            <text x="18" y="0" class="mono val">LinkedIn</text>
-            <text x="90" y="0" class="mono dots">...................</text>
-            <text x="175" y="0" class="mono" fill="#0284C7">linkedin.com/in/atul-kumar-454b34380</text>
-          </g>
-
-          <g transform="translate(15, 60)">
-            <text x="18" y="0" class="mono val">LeetCode</text>
-            <text x="90" y="0" class="mono dots">...................</text>
-            <text x="175" y="0" class="mono" fill="#D97706">leetcode.com/u/atulkumar181005</text>
-          </g>
-
-          <g transform="translate(15, 80)">
-            <text x="18" y="0" class="mono val">Email</text>
-            <text x="65" y="0" class="mono dots">.......................</text>
-            <text x="175" y="0" class="mono" fill="#0284C7">atulchoudhary181005@gmail.com</text>
-          </g>
-        </g>
+      <g transform="translate(14, 313)">
+        <path d="M6 0C2.69 0 0 2.76 0 6.16c0 2.72 1.72 5.03 4.1 5.84.3.06.41-.13.41-.3 0-.15-.01-.64-.01-1.18-1.67.37-2.02-.73-2.02-.73-.27-.72-.67-.91-.67-.91-.55-.38.04-.37.04-.37.6.04.92.64.92.64.54.94 1.41.67 1.75.51.05-.4.21-.67.38-.83-1.33-.15-2.73-.68-2.73-3.03 0-.67.24-1.22.62-1.65-.06-.15-.27-.78.06-1.63 0 0 .5-.17 1.66.63A5.62 5.62 0 0 1 6 3.16c.51 0 1.03.07 1.51.21 1.15-.8 1.65-.63 1.65-.63.34.85.13 1.48.06 1.63.39.43.62.98.62 1.65 0 2.36-1.4 2.88-2.74 3.03.22.19.41.56.41 1.14 0 .82-.01 1.49-.01 1.69 0 .17.11.36.42.3C10.28 11.19 12 8.88 12 6.16 12 2.76 9.31 0 6 0z" fill="#0f172a"/>
+        <text x="18" y="10" fill="#0f172a" font-weight="600">GitHub</text>
+        <text x="80" y="10" class="muted-dots-light">......................</text>
+        <text x="196" y="10" class="dark-text">github.com/Atulkumar5772</text>
       </g>
 
-      <g transform="translate(0, 420)">
-        <text x="0" y="0" class="mono" font-size="13">
-          <tspan fill="#0284C7" font-weight="700">atul@developer:~#</tspan>
-          <tspan fill="#0284C7" font-weight="900">
-            <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite" /> █
-          </tspan>
-        </text>
+      <g transform="translate(14, 335)">
+        <rect width="11" height="11" rx="2" fill="#0a66c2"/>
+        <text x="2.5" y="8.5" font-family="sans-serif" font-size="7" font-weight="bold" fill="#ffffff">in</text>
+        <text x="18" y="9" fill="#0a66c2" font-weight="600">LinkedIn</text>
+        <text x="80" y="9" class="muted-dots-light">....................</text>
+        <text x="196" y="9" class="dark-text">linkedin.com/in/atul-kumar-454b34380</text>
       </g>
+
+      <g transform="translate(14, 357)">
+        <rect width="11" height="11" rx="2" fill="#ffa116"/>
+        <text x="2" y="8.5" font-family="sans-serif" font-size="7" font-weight="bold" fill="#000000">LC</text>
+        <text x="18" y="9" fill="#d97706" font-weight="600">LeetCode</text>
+        <text x="80" y="9" class="muted-dots-light">....................</text>
+        <text x="196" y="9" class="dark-text">leetcode.com/u/atulkumar181005</text>
+      </g>
+
+      <g transform="translate(14, 379)">
+        <rect width="11" height="11" rx="2" fill="#ea4335"/>
+        <text x="2" y="8.5" font-family="sans-serif" font-size="7" font-weight="bold" fill="#ffffff">@</text>
+        <text x="18" y="9" fill="#dc2626" font-weight="600">Email</text>
+        <text x="80" y="9" class="muted-dots-light">.......................</text>
+        <text x="196" y="9" class="dark-text">atulchoudhary181005@gmail.com</text>
+      </g>
+    </g>
+
+    <g transform="translate(20, 476)">
+      <text x="0" y="0" class="font-mono" font-size="13" font-weight="700">
+        <tspan fill="#0284c7">atul@developer</tspan><tspan fill="#64748b">:~# </tspan>
+      </text>
+      <rect x="145" y="-11" width="8" height="14" fill="#0284c7" class="cursor-blink"/>
     </g>
   </g>
 </svg>
