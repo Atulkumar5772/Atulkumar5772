@@ -1,12 +1,5 @@
 <div align="center">
 
-<!-- 🌟 DYNAMIC ADAPTIVE HERO BANNER (DARK/LIGHT MODE) -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Atulkumar5772/Atulkumar5772/main/dark.svg?v=3">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Atulkumar5772/Atulkumar5772/main/light.svg?v=3">
-  <img src="https://raw.githubusercontent.com/Atulkumar5772/Atulkumar5772/main/dark.svg?v=3" alt="Atul Kumar - Cyber Terminal Developer Profile Banner" width="100%">
-</picture>
-
 <br>
 
 <p align="center">
