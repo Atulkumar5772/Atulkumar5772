@@ -66,40 +66,41 @@
 
 <div align="center">
 
-<!-- PROJECT 1: SENTINEL-GUARD -->
+<!-- PROJECT 1: PHOENIX-LINUX -->
 <table width="100%">
 <tr>
 <td width="55%" align="left">
 
-### 🛡️ Sentinel-Guard
-> **Linux Kernel File Integrity & Anti-Tamper Daemon**
+### 🔥 Phoenix-Linux
+> **Linux Kernel File Integrity Monitoring & Autonomous Self-Healing Daemon**
 
 <p>
   <img src="https://img.shields.io/badge/C%2B%2B17-00599C?style=flat-square&logo=c%2B%2B&logoColor=white"/>
   <img src="https://img.shields.io/badge/Linux_Kernel-FCC624?style=flat-square&logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/Red_Hat_RHEL-EE0000?style=flat-square&logo=redhat&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SHA--256_Vault-38BDF8?style=flat-square"/>
+  <img src="https://img.shields.io/badge/OpenSSL_SHA--256-38BDF8?style=flat-square&logo=openssl&logoColor=white"/>
+  <img src="https://img.shields.io/badge/systemd-daemon-success?style=flat-square&logo=systemd&logoColor=white"/>
 </p>
 
 <p>
-  ⚡ <b>Zero-Polling Kernel inotify</b> • 🔐 <b>Instant Tamper Detection</b> • 🛡️ <b>Auto Vault Baseline</b>
+  ⚡ <b>Zero-Polling Kernel inotify</b> • 🔐 <b>Instant Tamper Detection</b> • 🛡️ <b>Autonomous Self-Healing in &lt; 1.2 ms</b>
 </p>
 
 <br>
 
 <p align="left">
-  <a href="https://github.com/Atulkumar5772/Sentinel-Guard" target="_blank">
+  <a href="https://github.com/Atulkumar5772/Phoenix-Linux" target="_blank">
     <img src="https://img.shields.io/badge/📂_GITHUB_REPO-EE0000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/Atulkumar5772/Sentinel-Guard#readme" target="_blank">
+  <a href="https://github.com/Atulkumar5772/Phoenix-Linux#readme" target="_blank">
     <img src="https://img.shields.io/badge/📖_SYSTEM_SPECS-0A66C2?style=for-the-badge&logo=readme&logoColor=white"/>
   </a>
 </p>
 
 </td>
 <td width="45%" align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=1,6,24&height=140&text=Sentinel-Guard&fontSize=26&fontColor=ffffff&desc=Kernel%20inotify%20%7C%20C%2B%2B17%20Daemon&descSize=14&descAlignY=70&descAlign=50" width="100%" style="border-radius: 12px;"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=1,6,24&height=140&text=Phoenix-Linux&fontSize=26&fontColor=ffffff&desc=Kernel%20inotify%20%7C%20Self-Healing%20Daemon&descSize=13&descAlignY=70&descAlign=50" width="100%" style="border-radius: 12px;"/>
 </td>
 </tr>
 </table>
