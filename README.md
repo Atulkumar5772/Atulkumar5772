@@ -100,12 +100,12 @@
 
 </td>
 <td width="45%" align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=1,6,24&height=140&text=Phoenix-Linux&fontSize=26&fontColor=ffffff&desc=Kernel%20inotify%20%7C%20Self-Healing%20Daemon&descSize=13&descAlignY=70&descAlign=50" width="100%" style="border-radius: 12px;"/>
+  <a href="https://github.com/Atulkumar5772/Phoenix-Linux" target="_blank">
+    <img src="https://raw.githubusercontent.com/Atulkumar5772/Phoenix-Linux/main/assets/phoenix-preview.svg" width="100%" alt="Phoenix-Linux Kernel inotify Terminal Execution Preview" style="border-radius: 12px;"/>
+  </a>
 </td>
 </tr>
 </table>
-
-<br>
 
 <!-- PROJECT 2: IMAGE SEARCH APP -->
 <table width="100%">
