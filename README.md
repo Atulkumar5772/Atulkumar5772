@@ -179,12 +179,11 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Atulkumar5772/github_animation/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Atulkumar5772/github_animation/output/github-snake.svg" />
-    <img src="https://raw.githubusercontent.com/Atulkumar5772/github_animation/output/github-snake-dark.svg" alt="GitHub Contribution Snake Animation" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Atulkumar5772/Atulkumar5772/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Atulkumar5772/Atulkumar5772/output/github-snake.svg" />
+    <img src="https://raw.githubusercontent.com/Atulkumar5772/Atulkumar5772/output/github-snake-dark.svg" alt="GitHub Contribution Snake Animation" width="100%" />
   </picture>
 </div>
-
 ---
 
 <div align="center">
