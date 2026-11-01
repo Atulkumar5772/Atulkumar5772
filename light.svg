@@ -402,20 +402,20 @@
       <text x="135" y="20" class="muted-dots">...............</text>
       <text x="175" y="20" class="white-text">Linux Kernel Self-Healing Daemon</text>
 
-      <!-- Image Search -->
-      <text x="12" y="40" class="label-cyan">• Image Search</text>
+      <!-- Garuda-Aero-GCS -->
+      <text x="12" y="40" class="label-cyan">• Garuda Aero</text>
       <text x="120" y="40" class="muted-dots">..................</text>
-      <text x="175" y="40" class="white-text">Real-Time Search App (Unsplash API)</text>
+      <text x="175" y="40" class="white-text">Autonomous Drone GCS &amp; Airspace Hub</text>
+
+      <!-- Image Search -->
+      <text x="12" y="60" class="label-cyan">• Image Search</text>
+      <text x="120" y="60" class="muted-dots">..................</text>
+      <text x="175" y="60" class="white-text">Real-Time Search App (Unsplash API)</text>
 
       <!-- LeetCode DSA -->
-      <text x="12" y="60" class="label-cyan">• LeetCode DSA</text>
-      <text x="120" y="60" class="muted-dots">..................</text>
-      <text x="175" y="60" class="white-text">Algorithmic Problem Solving in Java/C++</text>
-
-      <!-- Cloud / Systems -->
-      <text x="12" y="80" class="label-cyan">• Systems Dev</text>
-      <text x="115" y="80" class="muted-dots">...................</text>
-      <text x="175" y="80" class="white-text">RHEL Administration &amp; Automation</text>
+      <text x="12" y="80" class="label-cyan">• LeetCode DSA</text>
+      <text x="120" y="80" class="muted-dots">..................</text>
+      <text x="175" y="80" class="white-text">Algorithmic Problem Solving in Java/C++</text>
     </g>
 
     <!-- Links Section -->

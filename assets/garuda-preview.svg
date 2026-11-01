@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="gcs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040914"/>
+      <stop offset="50%" stop-color="#081326"/>
+      <stop offset="100%" stop-color="#030710"/>
+    </linearGradient>
+
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b172e"/>
+      <stop offset="100%" stop-color="#122547"/>
+    </linearGradient>
+
+    <!-- Tactical Colors -->
+    <linearGradient id="cyan-glow-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="redzone-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#b91c1c" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <!-- Subtle Radar Grid -->
+    <pattern id="radar-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f3ff" stroke-opacity="0.06" stroke-width="0.8"/>
+    </pattern>
+
+    <!-- Glowing Filters -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="alert-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .hud-title { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-weight: 800; letter-spacing: 1.5px; }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 0.4; }
+    }
+    @keyframes ping-radar {
+      0% { r: 10px; opacity: 0.8; }
+      100% { r: 65px; opacity: 0; }
+    }
+    .pulse-fast { animation: pulse 1.6s ease-in-out infinite; }
+    .radar-pulse { animation: ping-radar 3s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
+  </style>
+
+  <!-- Outer HUD Frame -->
+  <rect x="10" y="10" width="740" height="460" rx="14" fill="url(#gcs-bg)" stroke="#00f3ff" stroke-opacity="0.4" stroke-width="1.5" filter="url(#neon-glow)"/>
+  <rect x="12" y="12" width="736" height="456" rx="12" fill="url(#radar-grid)"/>
+
+  <!-- Corner Brackets (Tactical Aerospace Aesthetic) -->
+  <path d="M 22 36 L 22 22 L 36 22" fill="none" stroke="#00f3ff" stroke-width="2.5"/>
+  <path d="M 738 36 L 738 22 L 724 22" fill="none" stroke="#00f3ff" stroke-width="2.5"/>
+  <path d="M 22 444 L 22 458 L 36 458" fill="none" stroke="#00f3ff" stroke-width="2.5"/>
+  <path d="M 738 444 L 738 458 L 724 458" fill="none" stroke="#00f3ff" stroke-width="2.5"/>
+
+  <!-- ================= TOP HEADER BAR ================= -->
+  <rect x="14" y="14" width="732" height="38" rx="8" fill="url(#header-grad)"/>
+  <line x1="14" y1="52" x2="746" y2="52" stroke="#00f3ff" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Status Indicator Dot -->
+  <circle cx="34" cy="33" r="4.5" fill="#10b981" class="pulse-fast"/>
+  <circle cx="34" cy="33" r="8" fill="none" stroke="#10b981" stroke-width="1" opacity="0.6"/>
+
+  <text x="50" y="37" class="hud-title" font-size="13" fill="#ffffff">GARUDA AERO GCS</text>
+  <text x="195" y="37" class="mono" font-size="10" fill="#38bdf8">| AUTONOMOUS DRONE FLIGHT OPERATING SYSTEM</text>
+
+  <!-- Badges in Header -->
+  <rect x="525" y="23" width="95" height="20" rx="4" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+  <text x="532" y="37" class="mono" font-size="9" font-weight="700" fill="#a5b4fc">DGCA COMPLIANT</text>
+
+  <rect x="628" y="23" width="105" height="20" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+  <text x="636" y="37" class="mono" font-size="9" font-weight="700" fill="#34d399">TELEMETRY: ACTIVE</text>
+
+  <!-- ================= MAIN MAP AREA (LEFT 490px) ================= -->
+  <!-- Map Canvas Box -->
+  <rect x="25" y="62" width="465" height="355" rx="8" fill="#06101e" stroke="#1e293b" stroke-width="1.2"/>
+
+  <!-- Compass / Crosshair Target Center -->
+  <circle cx="255" cy="235" r="140" fill="none" stroke="#00f3ff" stroke-opacity="0.08" stroke-width="1"/>
+  <circle cx="255" cy="235" r="90" fill="none" stroke="#00f3ff" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="4,4"/>
+  <circle cx="255" cy="235" r="40" fill="none" stroke="#00f3ff" stroke-opacity="0.16" stroke-width="1"/>
+  <line x1="255" y1="85" x2="255" y2="385" stroke="#00f3ff" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="105" y1="235" x2="405" y2="235" stroke="#00f3ff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- DGCA Red-Zone Geofence (Jaipur Airport Buffer) -->
+  <circle cx="360" cy="170" r="75" fill="url(#redzone-grad)" stroke="#ef4444" stroke-width="1.8" stroke-dasharray="6,4" filter="url(#alert-glow)"/>
+  <circle cx="360" cy="170" r="75" fill="none" stroke="#ef4444" stroke-width="1" class="radar-pulse"/>
+  <text x="360" y="165" class="mono" font-size="10" font-weight="700" fill="#fca5a5" text-anchor="middle">⚠️ NO-FLY RED ZONE</text>
+  <text x="360" y="180" class="mono" font-size="8.5" fill="#f87171" text-anchor="middle">JAIPUR AIRPORT BUFFER (1500m)</text>
+
+  <!-- Flight Path Polyline (Waypoints) -->
+  <!-- Home Base (WP0) -> WP1 -> WP2 (Active) -> WP3 -->
+  <path d="M 75 340 L 160 270 L 255 190 L 220 120" fill="none" stroke="#00f3ff" stroke-width="2.5" stroke-dasharray="6,3" filter="url(#neon-glow)"/>
+
+  <!-- Home Base Pin (WP0) -->
+  <circle cx="75" cy="340" r="7" fill="#10b981"/>
+  <circle cx="75" cy="340" r="12" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="2,2"/>
+  <text x="75" y="365" class="mono" font-size="9.5" font-weight="700" fill="#34d399" text-anchor="middle">HOME (RTH)</text>
+
+  <!-- Waypoint 1 -->
+  <circle cx="160" cy="270" r="5" fill="#38bdf8"/>
+  <text x="160" y="260" class="mono" font-size="9" fill="#93c5fd" text-anchor="middle">WP-01</text>
+
+  <!-- Waypoint 3 (Destination) -->
+  <circle cx="220" cy="120" r="5" fill="#f59e0b"/>
+  <text x="220" y="110" class="mono" font-size="9" fill="#fcd34d" text-anchor="middle">WP-03 (PATROL)</text>
+
+  <!-- ACTIVE DRONE POSITION (WP2) -->
+  <g transform="translate(255, 190) rotate(42)">
+    <!-- Drone Quadcopter Body Frame -->
+    <circle cx="0" cy="0" r="9" fill="#0f172a" stroke="#00f3ff" stroke-width="2"/>
+    <!-- Quad Arms -->
+    <line x1="-15" y1="-15" x2="15" y2="15" stroke="#94a3b8" stroke-width="2.5"/>
+    <line x1="-15" y1="15" x2="15" y2="-15" stroke="#94a3b8" stroke-width="2.5"/>
+    <!-- 4 Rotors -->
+    <circle cx="-15" cy="-15" r="6" fill="#00f3ff" fill-opacity="0.3" stroke="#00f3ff" stroke-width="1.2"/>
+    <circle cx="15" cy="15" r="6" fill="#00f3ff" fill-opacity="0.3" stroke="#00f3ff" stroke-width="1.2"/>
+    <circle cx="-15" cy="15" r="6" fill="#00f3ff" fill-opacity="0.3" stroke="#00f3ff" stroke-width="1.2"/>
+    <circle cx="15" cy="-15" r="6" fill="#00f3ff" fill-opacity="0.3" stroke="#00f3ff" stroke-width="1.2"/>
+    <!-- Heading Nose Indicator -->
+    <polygon points="0,-13 -4,-6 4,-6" fill="#ef4444"/>
+  </g>
+
+  <!-- Drone Live Tag -->
+  <rect x="272" y="175" width="102" height="34" rx="4" fill="#09182a" stroke="#00f3ff" stroke-width="1"/>
+  <text x="280" y="190" class="mono" font-size="9.5" font-weight="700" fill="#00f3ff">UAV-GARUDA-1</text>
+  <text x="280" y="202" class="mono" font-size="8" fill="#94a3b8">LAT 26.8312 | LON 75.8105</text>
+
+  <!-- Map HUD Overlay Bottom-Left -->
+  <rect x="35" y="380" width="195" height="26" rx="4" fill="#030813" fill-opacity="0.85" stroke="#1e293b" stroke-width="1"/>
+  <text x="43" y="397" class="mono" font-size="8.5" fill="#38bdf8">🌐 ESRI WORLD SATELLITE HUD</text>
+  <text x="180" y="397" class="mono" font-size="8" fill="#64748b">Z:16</text>
+
+  <!-- ================= RIGHT TELEMETRY GAUGES (230px) ================= -->
+  <rect x="500" y="62" width="235" height="355" rx="8" fill="#071322" stroke="#1e293b" stroke-width="1.2"/>
+
+  <!-- Telemetry Title -->
+  <path d="M 500 62 L 735 62 L 735 90 L 500 90 Z" fill="#0c1a2f"/>
+  <text x="515" y="81" class="hud-title" font-size="11" fill="#38bdf8">REAL-TIME TELEMETRY</text>
+  <circle cx="715" cy="76" r="3.5" fill="#00f3ff" class="pulse-fast"/>
+
+  <!-- Metric 1: Altitude -->
+  <g transform="translate(515, 105)">
+    <text x="0" y="12" class="mono" font-size="9.5" fill="#94a3b8">ALTITUDE (AGL)</text>
+    <text x="205" y="12" class="mono" font-size="13" font-weight="700" fill="#00f3ff" text-anchor="end">45.2 m</text>
+    <rect x="0" y="18" width="205" height="6" rx="3" fill="#1e293b"/>
+    <rect x="0" y="18" width="130" height="6" rx="3" fill="#00f3ff"/>
+  </g>
+
+  <!-- Metric 2: Ground Speed -->
+  <g transform="translate(515, 142)">
+    <text x="0" y="12" class="mono" font-size="9.5" fill="#94a3b8">GROUND SPEED</text>
+    <text x="205" y="12" class="mono" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="end">14.8 m/s</text>
+    <rect x="0" y="18" width="205" height="6" rx="3" fill="#1e293b"/>
+    <rect x="0" y="18" width="110" height="6" rx="3" fill="#38bdf8"/>
+  </g>
+
+  <!-- Metric 3: Battery Level -->
+  <g transform="translate(515, 179)">
+    <text x="0" y="12" class="mono" font-size="9.5" fill="#94a3b8">BATTERY (6S LiPo)</text>
+    <text x="205" y="12" class="mono" font-size="13" font-weight="700" fill="#10b981" text-anchor="end">89% • 22.8V</text>
+    <rect x="0" y="18" width="205" height="6" rx="3" fill="#1e293b"/>
+    <rect x="0" y="18" width="182" height="6" rx="3" fill="#10b981"/>
+  </g>
+
+  <!-- Metric 4: Distance to Home -->
+  <g transform="translate(515, 216)">
+    <text x="0" y="12" class="mono" font-size="9.5" fill="#94a3b8">DISTANCE TO HOME</text>
+    <text x="205" y="12" class="mono" font-size="13" font-weight="700" fill="#f59e0b" text-anchor="end">384 m</text>
+    <rect x="0" y="18" width="205" height="6" rx="3" fill="#1e293b"/>
+    <rect x="0" y="18" width="95" height="6" rx="3" fill="#f59e0b"/>
+  </g>
+
+  <!-- Metric 5: Spherical Math Heading -->
+  <g transform="translate(515, 253)">
+    <text x="0" y="12" class="mono" font-size="9.5" fill="#94a3b8">HEARING (HAVERSINE)</text>
+    <text x="205" y="12" class="mono" font-size="12" font-weight="700" fill="#a78bfa" text-anchor="end">042° (NE)</text>
+    <rect x="0" y="18" width="205" height="6" rx="3" fill="#1e293b"/>
+    <rect x="0" y="18" width="70" height="6" rx="3" fill="#a78bfa"/>
+  </g>
+
+  <!-- Flight Mode & Safety Status Cards -->
+  <g transform="translate(515, 290)">
+    <rect x="0" y="0" width="100" height="42" rx="4" fill="#091c33" stroke="#0284c7" stroke-width="1"/>
+    <text x="8" y="15" class="mono" font-size="8" fill="#7dd3fc">FLIGHT MODE</text>
+    <text x="8" y="32" class="mono" font-size="10.5" font-weight="700" fill="#ffffff">WAYPOINT</text>
+
+    <rect x="105" y="0" width="100" height="42" rx="4" fill="#1e1307" stroke="#b45309" stroke-width="1"/>
+    <text x="113" y="15" class="mono" font-size="8" fill="#fcd34d">SAFETY LOCK</text>
+    <text x="113" y="32" class="mono" font-size="10.5" font-weight="700" fill="#fbbf24">AUTO-RTH ON</text>
+  </g>
+
+  <!-- Spring Boot Backend Engine Badge -->
+  <g transform="translate(515, 342)">
+    <rect x="0" y="0" width="205" height="34" rx="4" fill="#082218" stroke="#059669" stroke-width="1"/>
+    <circle cx="15" cy="17" r="4" fill="#10b981"/>
+    <text x="26" y="15" class="mono" font-size="8.5" font-weight="700" fill="#34d399">SPRING BOOT 3.3.4 ENGINE</text>
+    <text x="26" y="27" class="mono" font-size="7.5" fill="#6ee7b7">1000ms Heartbeat • MySQL Persistence</text>
+  </g>
+
+  <!-- ================= BOTTOM CONSOLE TICKER ================= -->
+  <rect x="25" y="425" width="710" height="36" rx="6" fill="#07111e" stroke="#1e293b" stroke-width="1"/>
+  <text x="38" y="447" class="mono" font-size="9.5" fill="#22c55e">● SYSTEM NOMINAL</text>
+  <text x="155" y="447" class="mono" font-size="9" fill="#94a3b8">| DGCA GeoBuffer: Active | Physics Engine: 60 FPS | Telemetry REST API: 200 OK | Lat: 26.8312 N, Lon: 75.8105 E</text>
+</svg>

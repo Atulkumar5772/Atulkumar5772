@@ -146,6 +146,49 @@
 </tr>
 </table>
 
+<br>
+
+<!-- PROJECT 3: GARUDA AERO GCS -->
+<table width="100%">
+<tr>
+<td width="55%" align="left">
+
+### 🚁 Garuda Aero GCS
+> **Autonomous Drone Mission Planning & Airspace Safety Platform (DGCA Compliant)**
+
+<p>
+  <img src="https://img.shields.io/badge/Java_17+-ED8B00?style=flat-square&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Spring_Boot_3.3-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL_8.0-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Leaflet.js-199900?style=flat-square&logo=leaflet&logoColor=white"/>
+  <img src="https://img.shields.io/badge/DGCA_Safety-E11D48?style=flat-square&logo=shield&logoColor=white"/>
+</p>
+
+<p>
+  🗺️ <b>Dynamic Waypoint Planner</b> • 🛡️ <b>Dual-Layer DGCA Geofence &amp; Auto-RTH</b> • ⚡ <b>1000ms Physics Telemetry Engine</b>
+</p>
+
+<br>
+
+<p align="left">
+  <a href="https://github.com/Atulkumar5772/Garuda-Aero-GCS" target="_blank">
+    <img src="https://img.shields.io/badge/📂_GITHUB_REPO-10B981?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Atulkumar5772/Garuda-Aero-GCS#readme" target="_blank">
+    <img src="https://img.shields.io/badge/📖_FLIGHT_SPECS-0284C7?style=for-the-badge&logo=readme&logoColor=white"/>
+  </a>
+</p>
+
+</td>
+<td width="45%" align="center">
+  <a href="https://github.com/Atulkumar5772/Garuda-Aero-GCS" target="_blank">
+    <img src="https://raw.githubusercontent.com/Atulkumar5772/Garuda-Aero-GCS/main/assets/garuda-preview.svg" width="100%" alt="Garuda Aero GCS Telemetry HUD Preview" style="border-radius: 12px;"/>
+  </a>
+</td>
+</tr>
+</table>
+
 </div>
 
 ---
