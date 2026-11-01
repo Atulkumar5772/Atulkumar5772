@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 460" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="50%" stop-color="#071124"/>
+      <stop offset="100%" stop-color="#040915"/>
+    </linearGradient>
+
+    <!-- Pillar Gradients -->
+    <linearGradient id="client-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#082f49" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0c1d38" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <linearGradient id="backend-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#062e24" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <linearGradient id="db-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#241103" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Glow & Shadow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="dot-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#38bdf8" fill-opacity="0.15"/>
+    </pattern>
+
+    <!-- Arrow Markers -->
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#00f3ff"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .title { font-family: 'Segoe UI', -apple-system, system-ui, sans-serif; font-weight: 800; letter-spacing: 0.5px; }
+    .card-title { font-family: 'Segoe UI', -apple-system, system-ui, sans-serif; font-weight: 700; font-size: 11.5px; }
+    .card-desc { font-family: 'JetBrains Mono', Consolas, monospace; font-size: 9px; fill: #94a3b8; }
+  </style>
+
+  <!-- Outer Container -->
+  <rect x="8" y="8" width="844" height="444" rx="14" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="10" y="10" width="840" height="440" rx="12" fill="url(#dot-grid)"/>
+
+  <!-- Top Banner / Title -->
+  <g transform="translate(24, 20)">
+    <circle cx="10" cy="12" r="4" fill="#00f3ff"/>
+    <text x="24" y="16" class="title" font-size="14" fill="#ffffff">GARUDA AERO GCS</text>
+    <text x="175" y="16" class="mono" font-size="10" fill="#38bdf8">| FULL-STACK DISTRIBUTED ARCHITECTURE PIPELINE</text>
+    
+    <rect x="670" y="2" width="142" height="20" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="741" y="15" class="mono" font-size="8.5" fill="#94a3b8" text-anchor="middle">DGCA COMPLIANT • v3.3</text>
+  </g>
+
+  <!-- ================= TIER 1: FRONTEND CLIENT (Left Column) ================= -->
+  <g transform="translate(24, 58)">
+    <!-- Column Container -->
+    <rect x="0" y="0" width="245" height="375" rx="10" fill="url(#client-grad)" stroke="#0284c7" stroke-opacity="0.5" stroke-width="1.2"/>
+    
+    <!-- Tier Header -->
+    <rect x="0" y="0" width="245" height="36" rx="10" fill="#0369a1" fill-opacity="0.3"/>
+    <line x1="0" y1="36" x2="245" y2="36" stroke="#0284c7" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="14" y="22" class="title" font-size="11.5" fill="#38bdf8">1. GCS WEB CLIENT (HUD)</text>
+    <text x="230" y="22" class="mono" font-size="8.5" fill="#7dd3fc" text-anchor="end">BROWSER</text>
+
+    <!-- Card 1: Leaflet Interactive Map -->
+    <g transform="translate(12, 48)">
+      <rect x="0" y="0" width="221" height="68" rx="6" fill="#031525" stroke="#0284c7" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#0284c7"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#ffffff" text-anchor="middle">M</text>
+      <text x="30" y="20" class="card-title" fill="#e0f2fe">Interactive Leaflet.js Map</text>
+      <text x="12" y="38" class="card-desc">• Esri Satellite &amp; Carto Dark Tiles</text>
+      <text x="12" y="52" class="card-desc">• Drag-and-Drop Waypoint Plotting</text>
+      <text x="12" y="64" class="card-desc">• Visual 1500m Airport Buffer Overlay</text>
+    </g>
+
+    <!-- Card 2: 3D Quadcopter Visualizer -->
+    <g transform="translate(12, 126)">
+      <rect x="0" y="0" width="221" height="68" rx="6" fill="#031525" stroke="#0284c7" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#0ea5e9"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#ffffff" text-anchor="middle">Q</text>
+      <text x="30" y="20" class="card-title" fill="#e0f2fe">3D Drone Visualizer &amp; HUD</text>
+      <text x="12" y="38" class="card-desc">• Spinning Rotor SVG Animation</text>
+      <text x="12" y="52" class="card-desc">• Artificial Horizon (Attitude Gyro)</text>
+      <text x="12" y="64" class="card-desc">• Real-Time Particle Flight Trails</text>
+    </g>
+
+    <!-- Card 3: Operations Console -->
+    <g transform="translate(12, 204)">
+      <rect x="0" y="0" width="221" height="68" rx="6" fill="#031525" stroke="#0284c7" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#38bdf8"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#031525" text-anchor="middle">C</text>
+      <text x="30" y="20" class="card-title" fill="#e0f2fe">Mission Operations Console</text>
+      <text x="12" y="38" class="card-desc">• One-Click Launch / Pause / Resume</text>
+      <text x="12" y="52" class="card-desc">• Emergency Auto-RTH Trajectory</text>
+      <text x="12" y="64" class="card-desc">• Dock Battery Recharging Trigger</text>
+    </g>
+
+    <!-- Card 4: Pre-Flight Geofence Validator -->
+    <g transform="translate(12, 282)">
+      <rect x="0" y="0" width="221" height="54" rx="6" fill="#031525" stroke="#0284c7" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#ef4444"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#ffffff" text-anchor="middle">!</text>
+      <text x="30" y="20" class="card-title" fill="#fecaca">Pre-Flight Geofence Guard</text>
+      <text x="12" y="38" class="card-desc">• Client-side Haversine validation</text>
+      <text x="12" y="48" class="card-desc">• Blocks illegal waypoints in Red Zone</text>
+    </g>
+
+    <!-- Footer Tag -->
+    <text x="122" y="360" class="mono" font-size="8" fill="#38bdf8" text-anchor="middle">HTML5 • CSS3 Glassmorphism • ES6 JS</text>
+  </g>
+
+  <!-- ================= CONNECTOR 1 (REST / JSON) ================= -->
+  <g transform="translate(269, 175)">
+    <!-- Forward Arrow (Commands) -->
+    <path d="M 6 25 L 34 25" stroke="#00f3ff" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-cyan)"/>
+    <rect x="5" y="6" width="30" height="14" rx="3" fill="#082f49" stroke="#0284c7" stroke-width="0.6"/>
+    <text x="20" y="16" class="mono" font-size="7" fill="#38bdf8" text-anchor="middle">REST</text>
+
+    <!-- Backward Arrow (Telemetry Stream) -->
+    <path d="M 34 85 L 6 85" stroke="#10b981" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-green)"/>
+    <rect x="2" y="93" width="36" height="14" rx="3" fill="#064e3b" stroke="#059669" stroke-width="0.6"/>
+    <text x="20" y="103" class="mono" font-size="6.5" fill="#6ee7b7" text-anchor="middle">1000ms</text>
+  </g>
+
+  <!-- ================= TIER 2: SPRING BOOT 3 ENGINE (Center Column) ================= -->
+  <g transform="translate(310, 58)">
+    <!-- Column Container -->
+    <rect x="0" y="0" width="275" height="375" rx="10" fill="url(#backend-grad)" stroke="#059669" stroke-opacity="0.5" stroke-width="1.2"/>
+    
+    <!-- Tier Header -->
+    <rect x="0" y="0" width="275" height="36" rx="10" fill="#047857" fill-opacity="0.3"/>
+    <line x1="0" y1="36" x2="275" y2="36" stroke="#059669" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="14" y="22" class="title" font-size="11.5" fill="#34d399">2. SPRING BOOT 3.3.4 ENGINE</text>
+    <text x="260" y="22" class="mono" font-size="8.5" fill="#a7f3d0" text-anchor="end">JAVA 17+</text>
+
+    <!-- Card 1: REST Controllers -->
+    <g transform="translate(12, 48)">
+      <rect x="0" y="0" width="251" height="68" rx="6" fill="#022115" stroke="#059669" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#10b981"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#ffffff" text-anchor="middle">API</text>
+      <text x="30" y="20" class="card-title" fill="#d1fae5">REST API Controllers Layer</text>
+      <text x="12" y="38" class="card-desc">• DroneController (/api/drones)</text>
+      <text x="12" y="52" class="card-desc">• MissionController (/api/missions)</text>
+      <text x="12" y="64" class="card-desc">• TelemetryController (/api/telemetry/live)</text>
+    </g>
+
+    <!-- Card 2: Real-time Physics Simulator -->
+    <g transform="translate(12, 126)">
+      <rect x="0" y="0" width="251" height="74" rx="6" fill="#022115" stroke="#059669" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#34d399"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#022115" text-anchor="middle">PHY</text>
+      <text x="30" y="20" class="card-title" fill="#d1fae5">1000ms Physics &amp; Flight Engine</text>
+      <text x="12" y="38" class="card-desc">• Spherical Haversine Distance &amp; True Bearing</text>
+      <text x="12" y="52" class="card-desc">• Dynamic Climb/Descent Rates &amp; Airspeed</text>
+      <text x="12" y="66" class="card-desc">• LiPo Battery Drain &amp; Auto-Recharge Thread</text>
+    </g>
+
+    <!-- Card 3: Alert & Virtual Wall Rule Engine -->
+    <g transform="translate(12, 210)">
+      <rect x="0" y="0" width="251" height="74" rx="6" fill="#022115" stroke="#059669" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#ef4444"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#ffffff" text-anchor="middle">DEF</text>
+      <text x="30" y="20" class="card-title" fill="#fecaca">DGCA Virtual Wall &amp; Safety Rule Engine</text>
+      <text x="12" y="38" class="card-desc">• Continuous 1500m Jaipur Airport Zone Check</text>
+      <text x="12" y="52" class="card-desc">• Autonomous In-Flight Boundary Braking</text>
+      <text x="12" y="66" class="card-desc">• Automatic Return-to-Home (RTH) Override</text>
+    </g>
+
+    <!-- Card 4: JPA Repositories Layer -->
+    <g transform="translate(12, 294)">
+      <rect x="0" y="0" width="251" height="42" rx="6" fill="#022115" stroke="#059669" stroke-width="0.8"/>
+      <circle cx="16" cy="16" r="6" fill="#10b981"/>
+      <text x="16" y="19" class="mono" font-size="8" fill="#ffffff" text-anchor="middle">JPA</text>
+      <text x="30" y="18" class="card-title" fill="#d1fae5">Spring Data JPA / Hibernate Layer</text>
+      <text x="12" y="33" class="card-desc">• ORM Mappings for Drones, Missions &amp; Logs</text>
+    </g>
+
+    <!-- Footer Tag -->
+    <text x="137" y="360" class="mono" font-size="8" fill="#34d399" text-anchor="middle">Multi-threaded @Scheduled • Spring MVC</text>
+  </g>
+
+  <!-- ================= CONNECTOR 2 (JPA / SQL) ================= -->
+  <g transform="translate(585, 215)">
+    <!-- Bidirectional Database Channel -->
+    <line x1="6" y1="20" x2="32" y2="20" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arrow-cyan)"/>
+    <rect x="3" y="3" width="34" height="14" rx="3" fill="#451a03" stroke="#d97706" stroke-width="0.6"/>
+    <text x="20" y="13" class="mono" font-size="7" fill="#fbbf24" text-anchor="middle">SQL</text>
+  </g>
+
+  <!-- ================= TIER 3: PERSISTENCE & AIRSPACE DATA (Right Column) ================= -->
+  <g transform="translate(625, 58)">
+    <!-- Column Container -->
+    <rect x="0" y="0" width="210" height="375" rx="10" fill="url(#db-grad)" stroke="#d97706" stroke-opacity="0.5" stroke-width="1.2"/>
+    
+    <!-- Tier Header -->
+    <rect x="0" y="0" width="210" height="36" rx="10" fill="#b45309" fill-opacity="0.3"/>
+    <line x1="0" y1="36" x2="210" y2="36" stroke="#d97706" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="14" y="22" class="title" font-size="11.5" fill="#fbbf24">3. PERSISTENCE &amp; DATA</text>
+    <text x="195" y="22" class="mono" font-size="8.5" fill="#fde68a" text-anchor="end">MYSQL</text>
+
+    <!-- Card 1: MySQL Database -->
+    <g transform="translate(12, 48)">
+      <rect x="0" y="0" width="186" height="110" rx="6" fill="#1f0e02" stroke="#d97706" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#f59e0b"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#1f0e02" text-anchor="middle">DB</text>
+      <text x="30" y="20" class="card-title" fill="#fed7aa">MySQL 8.0 Data Store</text>
+      <text x="12" y="38" class="card-desc">📊 drone_simulation_db</text>
+      <text x="12" y="52" class="card-desc">• drones (Fleet Specs &amp; SOC)</text>
+      <text x="12" y="66" class="card-desc">• missions (Flight Plans)</text>
+      <text x="12" y="80" class="card-desc">• waypoints (Ordered Path)</text>
+      <text x="12" y="94" class="card-desc">• telemetry_logs (Time-series)</text>
+      <text x="12" y="104" class="card-desc">• alerts (DGCA Geofence Logs)</text>
+    </g>
+
+    <!-- Card 2: GIS GeoData & Airspace Parameters -->
+    <g transform="translate(12, 168)">
+      <rect x="0" y="0" width="186" height="90" rx="6" fill="#1f0e02" stroke="#d97706" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#fbbf24"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#1f0e02" text-anchor="middle">GIS</text>
+      <text x="30" y="20" class="card-title" fill="#fed7aa">Airspace Regulations</text>
+      <text x="12" y="38" class="card-desc">• DGCA Yellow/Red Zone Rules</text>
+      <text x="12" y="52" class="card-desc">• JAI Airport Coordinates</text>
+      <text x="12" y="66" class="card-desc">• 1500m Safety Runway Buffer</text>
+      <text x="12" y="80" class="card-desc">• 120m AGL Altitude Ceilings</text>
+    </g>
+
+    <!-- Card 3: Hardware Simulation Interface -->
+    <g transform="translate(12, 268)">
+      <rect x="0" y="0" width="186" height="68" rx="6" fill="#1f0e02" stroke="#d97706" stroke-width="0.8"/>
+      <circle cx="16" cy="18" r="6" fill="#f59e0b"/>
+      <text x="16" y="21" class="mono" font-size="8" fill="#1f0e02" text-anchor="middle">HW</text>
+      <text x="30" y="20" class="card-title" fill="#fed7aa">Digital Twin Interface</text>
+      <text x="12" y="38" class="card-desc">• 6S LiPo Discharge Model</text>
+      <text x="12" y="52" class="card-desc">• Wind/Kinematic Vector Drift</text>
+      <text x="12" y="64" class="card-desc">• Auto-RTH Failsafe Actuator</text>
+    </g>
+
+    <!-- Footer Tag -->
+    <text x="105" y="360" class="mono" font-size="8" fill="#fbbf24" text-anchor="middle">ACID Relational • JDBC 8.0</text>
+  </g>
+</svg>
