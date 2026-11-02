@@ -189,6 +189,49 @@
 </tr>
 </table>
 
+<br>
+
+<!-- PROJECT 4: ZEROTRACE-VAULT -->
+<table width="100%">
+<tr>
+<td width="55%" align="left">
+
+### 🛡️ ZeroTrace-Vault
+> **Zero-Knowledge Ephemeral Secret Sharing & Burn-on-Read Engine**
+
+<p>
+  <img src="https://img.shields.io/badge/AES--GCM--256-0284C7?style=flat-square&logo=lock&logoColor=white"/>
+  <img src="https://img.shields.io/badge/WebCrypto_API-10B981?style=flat-square&logo=shield&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"/>
+  <img src="https://img.shields.io/badge/RFC_3986_Anchor-8B5CF6?style=flat-square"/>
+</p>
+
+<p>
+  🔒 <b>Client-Side AES-256-GCM</b> • 🌐 <b>URL Hash Key Isolation</b> • 🔥 <b>Atomic Single-View Burn-on-Read</b>
+</p>
+
+<br>
+
+<p align="left">
+  <a href="https://github.com/Atulkumar5772/ZeroTrace-Vault" target="_blank">
+    <img src="https://img.shields.io/badge/📂_GITHUB_REPO-10B981?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/Atulkumar5772/ZeroTrace-Vault#readme" target="_blank">
+    <img src="https://img.shields.io/badge/📖_SECURITY_SPECS-7C3AED?style=for-the-badge&logo=readme&logoColor=white"/>
+  </a>
+</p>
+
+</td>
+<td width="45%" align="center">
+  <a href="https://github.com/Atulkumar5772/ZeroTrace-Vault" target="_blank">
+    <img src="https://raw.githubusercontent.com/Atulkumar5772/ZeroTrace-Vault/main/assets/zerotrace-preview.svg" width="100%" alt="ZeroTrace-Vault Cryptographic Lifecycle Architecture Preview" style="border-radius: 12px;"/>
+  </a>
+</td>
+</tr>
+</table>
+
 </div>
 
 ---

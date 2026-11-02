@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 460" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vault-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020612"/>
+      <stop offset="50%" stop-color="#061022"/>
+      <stop offset="100%" stop-color="#030814"/>
+    </linearGradient>
+
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#09182f"/>
+      <stop offset="100%" stop-color="#0f2648"/>
+    </linearGradient>
+
+    <linearGradient id="neon-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <pattern id="crypto-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#00f3ff" stroke-opacity="0.05" stroke-width="0.8"/>
+    </pattern>
+
+    <filter id="cyan-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="lock-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#00f3ff"/>
+    </marker>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .title { font-family: 'Segoe UI', -apple-system, system-ui, sans-serif; font-weight: 800; letter-spacing: 1px; }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.95; }
+      50% { opacity: 0.35; }
+    }
+    .pulse-fast { animation: pulse 1.6s ease-in-out infinite; }
+  </style>
+
+  <!-- Outer Frame -->
+  <rect x="8" y="8" width="764" height="444" rx="14" fill="url(#vault-bg)" stroke="#00f3ff" stroke-opacity="0.35" stroke-width="1.5" filter="url(#cyan-glow)"/>
+  <rect x="10" y="10" width="760" height="440" rx="12" fill="url(#crypto-grid)"/>
+
+  <!-- Tactical Corner Accents -->
+  <path d="M 18 32 L 18 18 L 32 18" fill="none" stroke="#00f3ff" stroke-width="2.5"/>
+  <path d="M 762 32 L 762 18 L 748 18" fill="none" stroke="#00f3ff" stroke-width="2.5"/>
+  <path d="M 18 428 L 18 442 L 32 442" fill="none" stroke="#00f3ff" stroke-width="2.5"/>
+  <path d="M 762 428 L 762 442 L 748 442" fill="none" stroke="#00f3ff" stroke-width="2.5"/>
+
+  <!-- Header Bar -->
+  <rect x="14" y="14" width="752" height="40" rx="8" fill="url(#header-grad)" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="34" cy="34" r="5" fill="#10b981" class="pulse-fast"/>
+  <circle cx="34" cy="34" r="9" fill="none" stroke="#10b981" stroke-width="1" opacity="0.6"/>
+  
+  <text x="52" y="38" class="title" font-size="13.5" fill="#ffffff">ZEROTRACE-VAULT</text>
+  <text x="210" y="38" class="mono" font-size="10.5" fill="#38bdf8">| ZERO-KNOWLEDGE EPHEMERAL SECRET SHARING</text>
+
+  <!-- Status Badges -->
+  <rect x="525" y="24" width="115" height="20" rx="4" fill="#042f2e" stroke="#14b8a6" stroke-width="1"/>
+  <text x="533" y="37" class="mono" font-size="9" font-weight="700" fill="#2dd4bf">AES-GCM-256 E2EE</text>
+
+  <rect x="650" y="24" width="105" height="20" rx="4" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+  <text x="659" y="37" class="mono" font-size="9" font-weight="700" fill="#a5b4fc">RFC 3986 ANCHOR</text>
+
+  <!-- ================= SECTION 1: ALICE (CLIENT ENCRYPTION) ================= -->
+  <g transform="translate(25, 68)">
+    <rect x="0" y="0" width="225" height="230" rx="8" fill="#061226" stroke="#0284c7" stroke-width="1.2"/>
+    
+    <rect x="0" y="0" width="225" height="30" rx="8" fill="#0c2244"/>
+    <text x="12" y="19" class="title" font-size="10.5" fill="#38bdf8">1. CLIENT ENCRYPTION (ALICE)</text>
+
+    <!-- Plaintext Input Mock -->
+    <rect x="12" y="42" width="201" height="48" rx="4" fill="#020815" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="58" class="mono" font-size="8.5" fill="#64748b">INPUT SECRET:</text>
+    <text x="20" y="74" class="mono" font-size="9" font-weight="700" fill="#f8fafc">AWS_KEY=AKIAIOSFODNN7...</text>
+
+    <!-- WebCrypto Box -->
+    <rect x="12" y="98" width="201" height="60" rx="4" fill="#031b30" stroke="#00f3ff" stroke-width="0.8"/>
+    <text x="20" y="114" class="mono" font-size="9" font-weight="700" fill="#00f3ff">⚡ WebCrypto API (Browser)</text>
+    <text x="20" y="128" class="mono" font-size="8" fill="#94a3b8">• 256-bit Key Generated Locally</text>
+    <text x="20" y="140" class="mono" font-size="8" fill="#94a3b8">• 96-bit Unique Nonce / IV</text>
+    <text x="20" y="152" class="mono" font-size="8" fill="#94a3b8">• Key placed in #Hash Fragment</text>
+
+    <!-- Payload Output Status -->
+    <rect x="12" y="168" width="201" height="50" rx="4" fill="#022c22" stroke="#10b981" stroke-width="0.8"/>
+    <text x="20" y="184" class="mono" font-size="8.5" font-weight="700" fill="#34d399">CIPHERTEXT TRANSMITTED</text>
+    <text x="20" y="198" class="mono" font-size="8" fill="#a7f3d0">Payload: yZdkVu95eolNJ-RC...</text>
+    <text x="20" y="210" class="mono" font-size="7.5" fill="#6ee7b7">🔒 Key NEVER sent over network!</text>
+  </g>
+
+  <!-- Arrow Alice -> Server -->
+  <path d="M 255 180 L 275 180" stroke="#00f3ff" stroke-width="2" stroke-dasharray="3,2" marker-end="url(#arrow)"/>
+
+  <!-- ================= SECTION 2: ZEROTRACE SERVER (ZERO KNOWLEDGE) ================= -->
+  <g transform="translate(280, 68)">
+    <rect x="0" y="0" width="220" height="230" rx="8" fill="#05141e" stroke="#10b981" stroke-width="1.2"/>
+    
+    <rect x="0" y="0" width="220" height="30" rx="8" fill="#063226"/>
+    <text x="12" y="19" class="title" font-size="10.5" fill="#34d399">2. EPHEMERAL DAEMON (RAM)</text>
+
+    <!-- Server Knowledge Box -->
+    <rect x="12" y="42" width="196" height="58" rx="4" fill="#021c16" stroke="#059669" stroke-width="0.8"/>
+    <text x="20" y="58" class="mono" font-size="8.5" font-weight="700" fill="#34d399">ZERO-KNOWLEDGE STATE</text>
+    <text x="20" y="72" class="mono" font-size="8" fill="#a7f3d0">• Server holds: Encrypted BLOB</text>
+    <text x="20" y="84" class="mono" font-size="8" fill="#a7f3d0">• Server has NO key to decrypt!</text>
+    <text x="20" y="94" class="mono" font-size="7.5" fill="#6ee7b7">• Immune to DB / Cloud Leaks</text>
+
+    <!-- RAM TTL Engine -->
+    <rect x="12" y="108" width="196" height="50" rx="4" fill="#031120" stroke="#0284c7" stroke-width="0.8"/>
+    <text x="20" y="124" class="mono" font-size="8.5" font-weight="700" fill="#38bdf8">IN-MEMORY MAP &amp; TTL</text>
+    <text x="20" y="138" class="mono" font-size="8" fill="#94a3b8">• 24-Hour Auto-Sweeper</text>
+    <text x="20" y="150" class="mono" font-size="8" fill="#94a3b8">• Helmet CSP &amp; Anti-Crawler</text>
+
+    <!-- Burn-on-Read Switch -->
+    <rect x="12" y="168" width="196" height="50" rx="4" fill="#3b0707" stroke="#ef4444" stroke-width="0.8"/>
+    <circle cx="24" cy="184" r="4" fill="#ef4444" class="pulse-fast"/>
+    <text x="34" y="188" class="mono" font-size="8.5" font-weight="700" fill="#fca5a5">ATOMIC BURN: ARMED</text>
+    <text x="20" y="202" class="mono" font-size="7.5" fill="#f87171">Purged from RAM upon retrieval</text>
+    <text x="20" y="212" class="mono" font-size="7.5" fill="#f87171">Next request: 404 DESTROYED</text>
+  </g>
+
+  <!-- Arrow Server -> Bob -->
+  <path d="M 505 180 L 525 180" stroke="#00f3ff" stroke-width="2" stroke-dasharray="3,2" marker-end="url(#arrow)"/>
+
+  <!-- ================= SECTION 3: BOB (CLIENT DECRYPTION) ================= -->
+  <g transform="translate(530, 68)">
+    <rect x="0" y="0" width="225" height="230" rx="8" fill="#061226" stroke="#8b5cf6" stroke-width="1.2"/>
+    
+    <rect x="0" y="0" width="225" height="30" rx="8" fill="#2e1065"/>
+    <text x="12" y="19" class="title" font-size="10.5" fill="#c4b5fd">3. CLIENT DECRYPT (BOB)</text>
+
+    <!-- URL Anchor Extraction -->
+    <rect x="12" y="42" width="201" height="48" rx="4" fill="#180b2e" stroke="#7c3aed" stroke-width="0.8"/>
+    <text x="20" y="58" class="mono" font-size="8" fill="#c4b5fd">URL HASH ANCHOR:</text>
+    <text x="20" y="72" class="mono" font-size="8.5" font-weight="700" fill="#a78bfa">.../v/{uuid}#key=VnhN5...</text>
+    <text x="20" y="84" class="mono" font-size="7" fill="#ddd6fe">Hash parsed in memory only</text>
+
+    <!-- Decryption Execution -->
+    <rect x="12" y="98" width="201" height="60" rx="4" fill="#031b30" stroke="#00f3ff" stroke-width="0.8"/>
+    <text x="20" y="114" class="mono" font-size="9" font-weight="700" fill="#00f3ff">Local Client Decryption</text>
+    <text x="20" y="128" class="mono" font-size="8" fill="#94a3b8">• Ciphertext pulled via /burn</text>
+    <text x="20" y="140" class="mono" font-size="8" fill="#94a3b8">• Decrypted with local #Key</text>
+    <text x="20" y="152" class="mono" font-size="8" fill="#94a3b8">• Original secret recovered 100%</text>
+
+    <!-- Burn Confirmation -->
+    <rect x="12" y="168" width="201" height="50" rx="4" fill="#450a0a" stroke="#ef4444" stroke-width="0.8"/>
+    <text x="20" y="184" class="mono" font-size="8.5" font-weight="700" fill="#fca5a5">BURN VERIFIED</text>
+    <text x="20" y="198" class="mono" font-size="7.5" fill="#f87171">2nd click/visit = 404 NOT FOUND</text>
+    <text x="20" y="210" class="mono" font-size="7.5" fill="#f87171">Zero digital residue remaining</text>
+  </g>
+
+  <!-- ================= LOWER URL ISOLATION PROOF BAR ================= -->
+  <g transform="translate(25, 310)">
+    <rect x="0" y="0" width="730" height="95" rx="8" fill="#050e1f" stroke="#1e293b" stroke-width="1.2"/>
+    
+    <text x="18" y="22" class="mono" font-size="10" font-weight="700" fill="#38bdf8">🌐 RFC 3986 URL HASH ANCHOR ISOLATION STANDARD</text>
+    
+    <!-- Code Box -->
+    <rect x="14" y="32" width="702" height="50" rx="4" fill="#020712" stroke="#00f3ff" stroke-width="0.8"/>
+    
+    <text x="26" y="52" class="mono" font-size="11" fill="#94a3b8">
+      https://vault.domain.com/v/<tspan fill="#38bdf8">7711e671-a965-4f9e-9f32-3b74578bb297</tspan><tspan fill="#ef4444" font-weight="bold">#</tspan><tspan fill="#10b981" font-weight="bold">VnhN538JOPW8kU... (256-bit Key)</tspan>
+    </text>
+    <text x="26" y="70" class="mono" font-size="8.5" fill="#64748b">↑ Sent to server in HTTP GET</text>
+    <text x="360" y="70" class="mono" font-size="8.5" fill="#34d399">↑ NEVER sent over network. Browser stops transmission at '#'</text>
+  </g>
+
+  <!-- Bottom Console Status Ticker -->
+  <rect x="25" y="415" width="730" height="32" rx="6" fill="#050d1a" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="38" cy="431" r="3.5" fill="#10b981" class="pulse-fast"/>
+  <text x="48" y="434" class="mono" font-size="9" font-weight="700" fill="#34d399">CRYPTOGRAPHIC INTEGRITY: 100%</text>
+  <text x="220" y="434" class="mono" font-size="8.5" fill="#94a3b8">| WebCrypto: AES-GCM-256 | Ephemeral RAM: Active | Anti-Crawler: Protected | Single-View: Enforced</text>
+</svg>
