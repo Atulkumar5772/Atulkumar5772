@@ -214,13 +214,15 @@
 <br>
 
 <p align="left">
+   <a href="zerotrace-vault.onrender.com" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_LIVE_DEMO-2563EB?style=for-the-badge&logo=google-chrome&logoColor=white"/>
+  </a>
+  &nbsp;&nbsp;
   <a href="https://github.com/Atulkumar5772/ZeroTrace-Vault" target="_blank">
     <img src="https://img.shields.io/badge/📂_GITHUB_REPO-10B981?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/Atulkumar5772/ZeroTrace-Vault#readme" target="_blank">
-    <img src="https://img.shields.io/badge/📖_SECURITY_SPECS-7C3AED?style=for-the-badge&logo=readme&logoColor=white"/>
-  </a>
+
 </p>
 
 </td>
