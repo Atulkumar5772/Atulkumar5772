@@ -214,7 +214,7 @@
 <br>
 
 <p align="left">
-   <a href="zerotrace-vault.onrender.com" target="_blank">
+   <a href="https://zerotrace-vault.onrender.com" target="_blank">
     <img src="https://img.shields.io/badge/🌐_LIVE_DEMO-2563EB?style=for-the-badge&logo=google-chrome&logoColor=white"/>
   </a>
   &nbsp;&nbsp;
