@@ -249,14 +249,21 @@
 
 <br><br>
 
-<!-- GitHub Stats & Top Languages -->
-<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Atulkumar5772&show_icons=true&theme=radical&hide_border=true&border_radius=12" height="175" />
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Atulkumar5772&layout=compact&theme=radical&hide_border=true&border_radius=12" height="175" />
+<!-- GitHub Stats & Top Languages (Live Sync & Modern Layout) -->
+<a href="https://github.com/Atulkumar5772" target="_blank">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Atulkumar5772&show_icons=true&include_all_commits=true&theme=radical&hide_border=true&border_radius=12&hide=prs,issues,contribs&cache_seconds=1800&v=3" height="185" alt="GitHub Stats" />
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/Atulkumar5772" target="_blank">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Atulkumar5772&theme=radical&hide_border=true&border_radius=12&cache_seconds=1800&v=3" height="185" alt="Top Languages" />
+</a>
 
 <br><br>
 
 <!-- GitHub Streak (Instant IST Sync) -->
-<img src="https://streak-stats.demolab.com/?user=Atulkumar5772&theme=radical&hide_border=true&border_radius=12&timezone=Asia%2FCalcutta" height="175" />
+<a href="https://github.com/Atulkumar5772" target="_blank">
+  <img src="https://streak-stats.demolab.com/?user=Atulkumar5772&theme=radical&hide_border=true&border_radius=12&timezone=Asia%2FCalcutta&cache_seconds=1800&v=3" height="175" alt="GitHub Streak" />
+</a>
 
 </div>
 
