@@ -249,13 +249,13 @@
 
 <br><br>
 
-<!-- GitHub Stats & Top Languages (Live Sync & Modern Layout) -->
+<!-- GitHub Stats & Top Languages (Permanent 100% Uptime Sync) -->
 <a href="https://github.com/Atulkumar5772" target="_blank">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Atulkumar5772&show_icons=true&include_all_commits=true&theme=radical&hide_border=true&border_radius=12&hide=prs,issues,contribs&cache_seconds=1800&v=3" height="185" alt="GitHub Stats" />
+  <img src="./assets/stats.svg" height="185" alt="GitHub Stats" />
 </a>
 &nbsp;&nbsp;
 <a href="https://github.com/Atulkumar5772" target="_blank">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Atulkumar5772&theme=radical&hide_border=true&border_radius=12&cache_seconds=1800&v=3" height="185" alt="Top Languages" />
+  <img src="./assets/top-langs.svg" height="185" alt="Top Languages" />
 </a>
 
 <br><br>
